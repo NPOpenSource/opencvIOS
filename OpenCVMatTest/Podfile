@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'OpenCVMatTest' do
+
+  pod 'OpenCV', '3.4.6'
+
+  pod 'OpenCVSource', :path => '../OpenCVSource'
+  pod 'OpenCVUtils', :path => '../OpenCVUtils'
+  pod 'OpenCVBase', :path => '../OpenCVBase'
+
+  
+  
+  target 'OpenCVMatTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'OpenCVMatTestUITests' do
+    # Pods for testing
+  end
+
+end
