@@ -16,7 +16,7 @@
 		246202E9236701B500B97202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246202E8236701B500B97202 /* main.m */; };
 		246202F3236701B600B97202 /* OpenCVFirstChapter_MatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246202F2236701B600B97202 /* OpenCVFirstChapter_MatTests.m */; };
 		246202FE236701B600B97202 /* OpenCVFirstChapter_MatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246202FD236701B600B97202 /* OpenCVFirstChapter_MatUITests.m */; };
-		2462031C2367D75D00B97202 /* MatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2462031B2367D75D00B97202 /* MatViewController.m */; };
+		2462031C2367D75D00B97202 /* MatViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2462031B2367D75D00B97202 /* MatViewController.mm */; };
 		981E904329F7B116ECEE62F2 /* libPods-OpenCVFirstChapter-MatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EBD503F429B08FBB5BD68F /* libPods-OpenCVFirstChapter-MatTests.a */; };
 		E7DDA00CB9DA76F3BBD0135A /* libPods-OpenCVFirstChapter-Mat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31F9112089A5B4D51F64390 /* libPods-OpenCVFirstChapter-Mat.a */; };
 		EC6D44BBE7596BA0DA891D08 /* libPods-OpenCVFirstChapter-Mat-OpenCVFirstChapter-MatUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 803CF732AFFAA50AC256D194 /* libPods-OpenCVFirstChapter-Mat-OpenCVFirstChapter-MatUITests.a */; };
@@ -59,7 +59,7 @@
 		246202FD236701B600B97202 /* OpenCVFirstChapter_MatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFirstChapter_MatUITests.m; sourceTree = "<group>"; };
 		246202FF236701B600B97202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2462031A2367D75D00B97202 /* MatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatViewController.h; sourceTree = "<group>"; };
-		2462031B2367D75D00B97202 /* MatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatViewController.m; sourceTree = "<group>"; };
+		2462031B2367D75D00B97202 /* MatViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MatViewController.mm; sourceTree = "<group>"; };
 		301CB5F6A919D136D17D7A04 /* Pods-OpenCVFirstChapter-Mat-OpenCVFirstChapter-MatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-Mat-OpenCVFirstChapter-MatUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-Mat-OpenCVFirstChapter-MatUITests/Pods-OpenCVFirstChapter-Mat-OpenCVFirstChapter-MatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		34EFF9B8379AF7866BB094A1 /* Pods-OpenCVFirstChapter-MatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-MatTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-MatTests/Pods-OpenCVFirstChapter-MatTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B8E32206FF16F071EE6AE13 /* Pods-OpenCVFirstChapter-Mat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-Mat.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-Mat/Pods-OpenCVFirstChapter-Mat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				2462031A2367D75D00B97202 /* MatViewController.h */,
-				2462031B2367D75D00B97202 /* MatViewController.m */,
+				2462031B2367D75D00B97202 /* MatViewController.mm */,
 			);
 			path = Mat;
 			sourceTree = "<group>";
@@ -394,7 +394,7 @@
 			files = (
 				246202DE236701B200B97202 /* ViewController.m in Sources */,
 				246202D8236701B200B97202 /* AppDelegate.m in Sources */,
-				2462031C2367D75D00B97202 /* MatViewController.m in Sources */,
+				2462031C2367D75D00B97202 /* MatViewController.mm in Sources */,
 				246202E9236701B500B97202 /* main.m in Sources */,
 				246202DB236701B200B97202 /* SceneDelegate.m in Sources */,
 			);
