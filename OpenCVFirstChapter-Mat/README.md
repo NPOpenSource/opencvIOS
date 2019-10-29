@@ -195,3 +195,5 @@ Point3f P3f(2, 6, 7);
 
 -----
 [github 地址](https://github.com/NPOpenSource/opencvIOS/tree/master/OpenCVFirstChapter-Mat)
+
+[摘录博客](http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/core/mat%20-%20the%20basic%20image%20container/mat%20-%20the%20basic%20image%20container.html#matthebasicimagecontainer)
