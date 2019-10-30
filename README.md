@@ -10,6 +10,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios OpenCV如何扫描图像、利用查找表和计时](/OpenCVFirstChapter-scanImage)
 
+[OpenCV 之ios 矩阵的掩码(核)操作](/OpenCVFirstChapter-kern)
+
 
 
 
