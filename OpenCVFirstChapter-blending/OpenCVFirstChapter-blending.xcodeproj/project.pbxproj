@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E796BEF5AD7C4D23550B641 /* libPods-OpenCVFirstChapter-blendingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D49303922590F0B4298D7FD /* libPods-OpenCVFirstChapter-blendingTests.a */; };
+		246203B923699FB600B97202 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 246203B823699FB600B97202 /* AppDelegate.m */; };
+		246203BC23699FB600B97202 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 246203BB23699FB600B97202 /* SceneDelegate.m */; };
+		246203BF23699FB600B97202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246203BE23699FB600B97202 /* ViewController.m */; };
+		246203C223699FB600B97202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246203C023699FB600B97202 /* Main.storyboard */; };
+		246203C423699FB800B97202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246203C323699FB800B97202 /* Assets.xcassets */; };
+		246203C723699FB800B97202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246203C523699FB800B97202 /* LaunchScreen.storyboard */; };
+		246203CA23699FB800B97202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246203C923699FB800B97202 /* main.m */; };
+		246203D423699FB800B97202 /* OpenCVFirstChapter_blendingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246203D323699FB800B97202 /* OpenCVFirstChapter_blendingTests.m */; };
+		246203DF23699FB800B97202 /* OpenCVFirstChapter_blendingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246203DE23699FB800B97202 /* OpenCVFirstChapter_blendingUITests.m */; };
+		246203EF2369A05000B97202 /* BlendingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 246203EE2369A05000B97202 /* BlendingViewController.mm */; };
+		75996FDF4F7BC98A0BC3CD16 /* libPods-OpenCVFirstChapter-blending.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35444CBDDDC7F5D3E0989528 /* libPods-OpenCVFirstChapter-blending.a */; };
+		FAE0FA07C3EE4C7299403DA2 /* libPods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD854322F7D83C27A483967F /* libPods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		246203D023699FB800B97202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 246203AC23699FB600B97202 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 246203B323699FB600B97202;
+			remoteInfo = "OpenCVFirstChapter-blending";
+		};
+		246203DB23699FB800B97202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 246203AC23699FB600B97202 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 246203B323699FB600B97202;
+			remoteInfo = "OpenCVFirstChapter-blending";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05189615DCE1C88371567447 /* Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		246203B423699FB600B97202 /* OpenCVFirstChapter-blending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVFirstChapter-blending.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		246203B723699FB600B97202 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		246203B823699FB600B97202 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		246203BA23699FB600B97202 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		246203BB23699FB600B97202 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		246203BD23699FB600B97202 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		246203BE23699FB600B97202 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		246203C123699FB600B97202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		246203C323699FB800B97202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		246203C623699FB800B97202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		246203C823699FB800B97202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246203C923699FB800B97202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		246203CF23699FB800B97202 /* OpenCVFirstChapter-blendingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVFirstChapter-blendingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		246203D323699FB800B97202 /* OpenCVFirstChapter_blendingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFirstChapter_blendingTests.m; sourceTree = "<group>"; };
+		246203D523699FB800B97202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246203DA23699FB800B97202 /* OpenCVFirstChapter-blendingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVFirstChapter-blendingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		246203DE23699FB800B97202 /* OpenCVFirstChapter_blendingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFirstChapter_blendingUITests.m; sourceTree = "<group>"; };
+		246203E023699FB800B97202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246203ED2369A05000B97202 /* BlendingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlendingViewController.h; sourceTree = "<group>"; };
+		246203EE2369A05000B97202 /* BlendingViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BlendingViewController.mm; sourceTree = "<group>"; };
+		35444CBDDDC7F5D3E0989528 /* libPods-OpenCVFirstChapter-blending.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-blending.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAEF4EF2BFBF2CA2CAAD56F /* Pods-OpenCVFirstChapter-blending.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-blending.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-blending/Pods-OpenCVFirstChapter-blending.release.xcconfig"; sourceTree = "<group>"; };
+		5D49303922590F0B4298D7FD /* libPods-OpenCVFirstChapter-blendingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-blendingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C711885451736AC8F4130D /* Pods-OpenCVFirstChapter-blending.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-blending.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-blending/Pods-OpenCVFirstChapter-blending.debug.xcconfig"; sourceTree = "<group>"; };
+		D662ADFDB21FBFC67827C735 /* Pods-OpenCVFirstChapter-blendingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-blendingTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-blendingTests/Pods-OpenCVFirstChapter-blendingTests.release.xcconfig"; sourceTree = "<group>"; };
+		D77B58ABE021A25944230CEF /* Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA110758846CE2EFB2DD19CE /* Pods-OpenCVFirstChapter-blendingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-blendingTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-blendingTests/Pods-OpenCVFirstChapter-blendingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD854322F7D83C27A483967F /* libPods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		246203B123699FB600B97202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75996FDF4F7BC98A0BC3CD16 /* libPods-OpenCVFirstChapter-blending.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246203CC23699FB800B97202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E796BEF5AD7C4D23550B641 /* libPods-OpenCVFirstChapter-blendingTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246203D723699FB800B97202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE0FA07C3EE4C7299403DA2 /* libPods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100EC0C06566CBDAFF78B364 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8C711885451736AC8F4130D /* Pods-OpenCVFirstChapter-blending.debug.xcconfig */,
+				4CAEF4EF2BFBF2CA2CAAD56F /* Pods-OpenCVFirstChapter-blending.release.xcconfig */,
+				D77B58ABE021A25944230CEF /* Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.debug.xcconfig */,
+				05189615DCE1C88371567447 /* Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.release.xcconfig */,
+				DA110758846CE2EFB2DD19CE /* Pods-OpenCVFirstChapter-blendingTests.debug.xcconfig */,
+				D662ADFDB21FBFC67827C735 /* Pods-OpenCVFirstChapter-blendingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		246203AB23699FB600B97202 = {
+			isa = PBXGroup;
+			children = (
+				246203B623699FB600B97202 /* OpenCVFirstChapter-blending */,
+				246203D223699FB800B97202 /* OpenCVFirstChapter-blendingTests */,
+				246203DD23699FB800B97202 /* OpenCVFirstChapter-blendingUITests */,
+				246203B523699FB600B97202 /* Products */,
+				100EC0C06566CBDAFF78B364 /* Pods */,
+				67FB33359913A70725E4BE69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		246203B523699FB600B97202 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				246203B423699FB600B97202 /* OpenCVFirstChapter-blending.app */,
+				246203CF23699FB800B97202 /* OpenCVFirstChapter-blendingTests.xctest */,
+				246203DA23699FB800B97202 /* OpenCVFirstChapter-blendingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246203B623699FB600B97202 /* OpenCVFirstChapter-blending */ = {
+			isa = PBXGroup;
+			children = (
+				246203EC23699FFB00B97202 /* blending */,
+				246203B723699FB600B97202 /* AppDelegate.h */,
+				246203B823699FB600B97202 /* AppDelegate.m */,
+				246203BA23699FB600B97202 /* SceneDelegate.h */,
+				246203BB23699FB600B97202 /* SceneDelegate.m */,
+				246203BD23699FB600B97202 /* ViewController.h */,
+				246203BE23699FB600B97202 /* ViewController.m */,
+				246203C023699FB600B97202 /* Main.storyboard */,
+				246203C323699FB800B97202 /* Assets.xcassets */,
+				246203C523699FB800B97202 /* LaunchScreen.storyboard */,
+				246203C823699FB800B97202 /* Info.plist */,
+				246203C923699FB800B97202 /* main.m */,
+			);
+			path = "OpenCVFirstChapter-blending";
+			sourceTree = "<group>";
+		};
+		246203D223699FB800B97202 /* OpenCVFirstChapter-blendingTests */ = {
+			isa = PBXGroup;
+			children = (
+				246203D323699FB800B97202 /* OpenCVFirstChapter_blendingTests.m */,
+				246203D523699FB800B97202 /* Info.plist */,
+			);
+			path = "OpenCVFirstChapter-blendingTests";
+			sourceTree = "<group>";
+		};
+		246203DD23699FB800B97202 /* OpenCVFirstChapter-blendingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				246203DE23699FB800B97202 /* OpenCVFirstChapter_blendingUITests.m */,
+				246203E023699FB800B97202 /* Info.plist */,
+			);
+			path = "OpenCVFirstChapter-blendingUITests";
+			sourceTree = "<group>";
+		};
+		246203EC23699FFB00B97202 /* blending */ = {
+			isa = PBXGroup;
+			children = (
+				246203ED2369A05000B97202 /* BlendingViewController.h */,
+				246203EE2369A05000B97202 /* BlendingViewController.mm */,
+			);
+			path = blending;
+			sourceTree = "<group>";
+		};
+		67FB33359913A70725E4BE69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35444CBDDDC7F5D3E0989528 /* libPods-OpenCVFirstChapter-blending.a */,
+				DD854322F7D83C27A483967F /* libPods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.a */,
+				5D49303922590F0B4298D7FD /* libPods-OpenCVFirstChapter-blendingTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		246203B323699FB600B97202 /* OpenCVFirstChapter-blending */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246203E323699FB800B97202 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-blending" */;
+			buildPhases = (
+				D19E71AC37AE3C5BF85DAA73 /* [CP] Check Pods Manifest.lock */,
+				246203B023699FB600B97202 /* Sources */,
+				246203B123699FB600B97202 /* Frameworks */,
+				246203B223699FB600B97202 /* Resources */,
+				36DEA679EAE5576EB1D15E1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVFirstChapter-blending";
+			productName = "OpenCVFirstChapter-blending";
+			productReference = 246203B423699FB600B97202 /* OpenCVFirstChapter-blending.app */;
+			productType = "com.apple.product-type.application";
+		};
+		246203CE23699FB800B97202 /* OpenCVFirstChapter-blendingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246203E623699FB800B97202 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-blendingTests" */;
+			buildPhases = (
+				C987963049E86EE2FE8ED3DD /* [CP] Check Pods Manifest.lock */,
+				246203CB23699FB800B97202 /* Sources */,
+				246203CC23699FB800B97202 /* Frameworks */,
+				246203CD23699FB800B97202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				246203D123699FB800B97202 /* PBXTargetDependency */,
+			);
+			name = "OpenCVFirstChapter-blendingTests";
+			productName = "OpenCVFirstChapter-blendingTests";
+			productReference = 246203CF23699FB800B97202 /* OpenCVFirstChapter-blendingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		246203D923699FB800B97202 /* OpenCVFirstChapter-blendingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246203E923699FB800B97202 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-blendingUITests" */;
+			buildPhases = (
+				5D0D9C9DC9D6C9FC65CE14D5 /* [CP] Check Pods Manifest.lock */,
+				246203D623699FB800B97202 /* Sources */,
+				246203D723699FB800B97202 /* Frameworks */,
+				246203D823699FB800B97202 /* Resources */,
+				5D63488865A4CA4A412FF0D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				246203DC23699FB800B97202 /* PBXTargetDependency */,
+			);
+			name = "OpenCVFirstChapter-blendingUITests";
+			productName = "OpenCVFirstChapter-blendingUITests";
+			productReference = 246203DA23699FB800B97202 /* OpenCVFirstChapter-blendingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246203AC23699FB600B97202 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					246203B323699FB600B97202 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					246203CE23699FB800B97202 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 246203B323699FB600B97202;
+					};
+					246203D923699FB800B97202 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 246203B323699FB600B97202;
+					};
+				};
+			};
+			buildConfigurationList = 246203AF23699FB600B97202 /* Build configuration list for PBXProject "OpenCVFirstChapter-blending" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 246203AB23699FB600B97202;
+			productRefGroup = 246203B523699FB600B97202 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				246203B323699FB600B97202 /* OpenCVFirstChapter-blending */,
+				246203CE23699FB800B97202 /* OpenCVFirstChapter-blendingTests */,
+				246203D923699FB800B97202 /* OpenCVFirstChapter-blendingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		246203B223699FB600B97202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246203C723699FB800B97202 /* LaunchScreen.storyboard in Resources */,
+				246203C423699FB800B97202 /* Assets.xcassets in Resources */,
+				246203C223699FB600B97202 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246203CD23699FB800B97202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246203D823699FB800B97202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36DEA679EAE5576EB1D15E1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-blending/Pods-OpenCVFirstChapter-blending-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-blending/Pods-OpenCVFirstChapter-blending-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-blending/Pods-OpenCVFirstChapter-blending-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0D9C9DC9D6C9FC65CE14D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D63488865A4CA4A412FF0D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests/Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C987963049E86EE2FE8ED3DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-blendingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D19E71AC37AE3C5BF85DAA73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-blending-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246203B023699FB600B97202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246203BF23699FB600B97202 /* ViewController.m in Sources */,
+				246203B923699FB600B97202 /* AppDelegate.m in Sources */,
+				246203EF2369A05000B97202 /* BlendingViewController.mm in Sources */,
+				246203CA23699FB800B97202 /* main.m in Sources */,
+				246203BC23699FB600B97202 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246203CB23699FB800B97202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246203D423699FB800B97202 /* OpenCVFirstChapter_blendingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246203D623699FB800B97202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246203DF23699FB800B97202 /* OpenCVFirstChapter_blendingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		246203D123699FB800B97202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 246203B323699FB600B97202 /* OpenCVFirstChapter-blending */;
+			targetProxy = 246203D023699FB800B97202 /* PBXContainerItemProxy */;
+		};
+		246203DC23699FB800B97202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 246203B323699FB600B97202 /* OpenCVFirstChapter-blending */;
+			targetProxy = 246203DB23699FB800B97202 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		246203C023699FB600B97202 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246203C123699FB600B97202 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		246203C523699FB800B97202 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246203C623699FB800B97202 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		246203E123699FB800B97202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		246203E223699FB800B97202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		246203E423699FB800B97202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C711885451736AC8F4130D /* Pods-OpenCVFirstChapter-blending.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-blending/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-blending";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		246203E523699FB800B97202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAEF4EF2BFBF2CA2CAAD56F /* Pods-OpenCVFirstChapter-blending.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-blending/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-blending";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		246203E723699FB800B97202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA110758846CE2EFB2DD19CE /* Pods-OpenCVFirstChapter-blendingTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-blendingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-blendingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFirstChapter-blending.app/OpenCVFirstChapter-blending";
+			};
+			name = Debug;
+		};
+		246203E823699FB800B97202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D662ADFDB21FBFC67827C735 /* Pods-OpenCVFirstChapter-blendingTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-blendingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-blendingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFirstChapter-blending.app/OpenCVFirstChapter-blending";
+			};
+			name = Release;
+		};
+		246203EA23699FB800B97202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77B58ABE021A25944230CEF /* Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-blendingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-blendingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVFirstChapter-blending";
+			};
+			name = Debug;
+		};
+		246203EB23699FB800B97202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05189615DCE1C88371567447 /* Pods-OpenCVFirstChapter-blending-OpenCVFirstChapter-blendingUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-blendingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-blendingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVFirstChapter-blending";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246203AF23699FB600B97202 /* Build configuration list for PBXProject "OpenCVFirstChapter-blending" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246203E123699FB800B97202 /* Debug */,
+				246203E223699FB800B97202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246203E323699FB800B97202 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-blending" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246203E423699FB800B97202 /* Debug */,
+				246203E523699FB800B97202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246203E623699FB800B97202 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-blendingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246203E723699FB800B97202 /* Debug */,
+				246203E823699FB800B97202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246203E923699FB800B97202 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-blendingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246203EA23699FB800B97202 /* Debug */,
+				246203EB23699FB800B97202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 246203AC23699FB600B97202 /* Project object */;
+}

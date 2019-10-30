@@ -1,6 +1,6 @@
 //
-//  KernViewController.m
-//  OpenCVFirstChapter-kern
+//  BlendingViewController.m
+//  OpenCVFirstChapter-blending
 //
 //  Created by glodon on 2019/10/30.
 //  Copyright © 2019 persion. All rights reserved.
@@ -17,66 +17,37 @@ using namespace cv;
 using namespace std;
 
 #endif
-#import "KernViewController.h"
+#import "BlendingViewController.h"
 
-@interface KernViewController ()
+@interface BlendingViewController ()
 
 @end
 
-@implementation KernViewController
+@implementation BlendingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImage * image =  [UIImage imageNamed:@"lena.jpg"];
-    Mat sourceMat = [self cvMatFromUIImage:image];
-    Mat rgbSourceMat;
-    cvtColor(sourceMat, rgbSourceMat, COLOR_RGBA2BGR);
+    double alpha = 0.5; double beta;
+
+     Mat src1, src2, dst;
+    UIImage * src1Image = [UIImage imageNamed:@"LinuxLogo.jpg"];
+    UIImage * src2Image = [UIImage imageNamed:@"WindowsLogo.jpg"];
+     src1 = [self cvMatFromUIImage:src1Image];
     UIImageView *imageView;
-      imageView = [self createImageViewInRect:CGRectMake(0, 100, 150, 150)];
-      [self.view addSubview:imageView];
-      imageView.image  = [self UIImageFromCVMat:rgbSourceMat];
+    imageView = [self createImageViewInRect:CGRectMake(0, 100, 150, 150)];
+    [self.view addSubview:imageView];
+    imageView.image  = [self UIImageFromCVMat:src1];
     
-    Mat result = [self SharpenSourceMat:rgbSourceMat];
-    imageView = [self createImageViewInRect:CGRectMake(0, 250, 150, 150)];
-         [self.view addSubview:imageView];
-         imageView.image  = [self UIImageFromCVMat:result];
-    // Do any additional setup after loading the view.
-}
-
-
--(cv::Mat)SharpenSourceMat:(cv::Mat) myImage {
-    CV_Assert(myImage.depth() == CV_8U);  // 仅接受uchar图像
-    Mat Result;
-    Result.create(myImage.size(),myImage.type());
-    const int nChannels = myImage.channels();
-
-    for(int j = 1 ; j < myImage.rows-1; ++j)
-    {
-        const uchar* previous = myImage.ptr<uchar>(j - 1);
-        const uchar* current  = myImage.ptr<uchar>(j    );
-        const uchar* next     = myImage.ptr<uchar>(j + 1);
-        uchar* output = Result.ptr<uchar>(j);
-        for(int i= nChannels;i < nChannels*(myImage.cols-1); ++i)
-        {
-            *output++ = saturate_cast<uchar>(5*current[i]
-                         -current[i-nChannels] - current[i+nChannels] - previous[i] - next[i]);
-        }
-    }
-
-    Result.row(0).setTo(Scalar(0));
-    Result.row(Result.rows-1).setTo(Scalar(0));
-    Result.col(0).setTo(Scalar(0));
-    Result.col(Result.cols-1).setTo(Scalar(0));
-    return Result;
-}
-
--(cv::Mat)SourceMat:(cv::Mat) myImage {
-    Mat kern = (Mat_<char>(3,3) <<  0, -1,  0,
-    -1,  5, -1,
-     0, -1,  0);
-       Mat Result;
-    filter2D(myImage, Result, myImage.depth(), kern );
-    return Result;
+    src2 = [self cvMatFromUIImage:src2Image];
+       imageView = [self createImageViewInRect:CGRectMake(0, 250, 150, 150)];
+       [self.view addSubview:imageView];
+       imageView.image  = [self UIImageFromCVMat:src2];
+    
+    beta = ( 1.0 - alpha );
+    addWeighted( src1, alpha, src2, beta, 0.0, dst);
+    imageView = [self createImageViewInRect:CGRectMake(0, 400, 150, 150)];
+    [self.view addSubview:imageView];
+    imageView.image  = [self UIImageFromCVMat:dst];
 }
 
 #pragma mark  - private
@@ -97,7 +68,11 @@ using namespace std;
                                                  kCGBitmapByteOrderDefault); // Bitmap info flags
   CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), image.CGImage);
   CGContextRelease(contextRef);
-  return cvMat;
+    
+    Mat dst;
+    cvtColor(cvMat, dst, COLOR_RGBA2BGRA);
+
+  return dst;
 }
 
 -(UIImage *)UIImageFromCVMat:(cv::Mat)cvMat
@@ -105,14 +80,20 @@ using namespace std;
 //    mat 是brg 而 rgb
     Mat src;
     NSData *data=nil;
+    CGBitmapInfo info =kCGImageAlphaNone|kCGBitmapByteOrderDefault;
   CGColorSpaceRef colorSpace;
   if (cvMat.elemSize() == 1) {
       colorSpace = CGColorSpaceCreateDeviceGray();
       data= [NSData dataWithBytes:cvMat.data length:cvMat.elemSize()*cvMat.total()];
-  } else {
+  } else if(cvMat.elemSize() == 3){
       cvtColor(cvMat, src, COLOR_BGR2RGB);
        data= [NSData dataWithBytes:src.data length:src.elemSize()*src.total()];
       colorSpace = CGColorSpaceCreateDeviceRGB();
+  }else{
+      colorSpace = CGColorSpaceCreateDeviceRGB();
+      cvtColor(cvMat, src, COLOR_BGRA2RGBA);
+      data= [NSData dataWithBytes:src.data length:src.elemSize()*src.total()];
+      info =kCGImageAlphaNoneSkipLast | kCGBitmapByteOrderDefault;
   }
   CGDataProviderRef provider = CGDataProviderCreateWithCFData((__bridge CFDataRef)data);
   // Creating CGImage from cv::Mat

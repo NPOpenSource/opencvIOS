@@ -12,6 +12,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 矩阵的掩码(核)操作](/OpenCVFirstChapter-kern)
 
+[OpenCV 之ios  使用OpenCV对两幅图像求和（求混合(blending)](/OpenCVFirstChapter-blending)
+
 
 
 
