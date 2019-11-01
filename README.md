@@ -16,3 +16,5 @@ Opencv 中文网学习
 
 [OpenCV 之ios 改变图像的对比度和亮度](/OpenCVFirstChapter-ContrastAndBrightness)
 
+[OpenCV 之ios 基本绘制](/OpenCVFirstChapter-baseDraw)
+
