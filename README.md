@@ -1,6 +1,6 @@
 Opencv 中文网学习
 
-
+# 第一章 core 模块. 核心功能
 
 [OpenCV 之ios 环境搭建](/OpenCVFirstProject)
 
@@ -14,7 +14,5 @@ Opencv 中文网学习
 
 [OpenCV 之ios  使用OpenCV对两幅图像求和（求混合(blending)](/OpenCVFirstChapter-blending)
 
-
-
-
+[OpenCV 之ios 改变图像的对比度和亮度](/OpenCVFirstChapter-ContrastAndBrightness)
 
