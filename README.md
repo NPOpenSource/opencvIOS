@@ -18,3 +18,5 @@ Opencv 中文网学习
 
 [OpenCV 之ios 基本绘制](/OpenCVFirstChapter-baseDraw)
 
+[OpenCV 之ios 随机数发生器&绘制文字](/OpenCVFirstChapter-randomGeneratorAndText)
+

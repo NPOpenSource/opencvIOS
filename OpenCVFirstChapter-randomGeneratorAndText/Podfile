@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'OpenCVFirstChapter-randomGeneratorAndText' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  pod 'OpenCVSource', :path => '../OpenCVSource'
+       pod 'OpenCVUtils', :path => '../OpenCVUtils'
+       pod 'OpenCVBase', :path => '../OpenCVBase'
+  # Pods for OpenCVFirstChapter-randomGeneratorAndText
+
+  target 'OpenCVFirstChapter-randomGeneratorAndTextTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'OpenCVFirstChapter-randomGeneratorAndTextUITests' do
+    # Pods for testing
+  end
+
+end
