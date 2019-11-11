@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		173BBAD4F257F63F33E888EB /* libPods-OpenCVFirstChapter-discrete_fourier_transform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325219F373617D4B142583A4 /* libPods-OpenCVFirstChapter-discrete_fourier_transform.a */; };
+		2442F77B2373F9B500C42DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F77A2373F9B500C42DC2 /* AppDelegate.m */; };
+		2442F77E2373F9B500C42DC2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F77D2373F9B500C42DC2 /* SceneDelegate.m */; };
+		2442F7812373F9B500C42DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7802373F9B500C42DC2 /* ViewController.m */; };
+		2442F7842373F9B500C42DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442F7822373F9B500C42DC2 /* Main.storyboard */; };
+		2442F7862373F9B700C42DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2442F7852373F9B700C42DC2 /* Assets.xcassets */; };
+		2442F7892373F9B700C42DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442F7872373F9B700C42DC2 /* LaunchScreen.storyboard */; };
+		2442F78C2373F9B700C42DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F78B2373F9B700C42DC2 /* main.m */; };
+		2442F7962373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7952373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformTests.m */; };
+		2442F7A12373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7A02373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformUITests.m */; };
+		2442F7B12373FA5700C42DC2 /* DisccreteTransfromViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7B02373FA5700C42DC2 /* DisccreteTransfromViewController.mm */; };
+		AE02EA0D0A7EC27467BBAD59 /* libPods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D12A5CCA951F4174A90F582C /* libPods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.a */; };
+		D3EA8491D2FEAB35BA597E77 /* libPods-OpenCVFirstChapter-discrete_fourier_transformTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C0253D0369EA76C3125809 /* libPods-OpenCVFirstChapter-discrete_fourier_transformTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2442F7922373F9B700C42DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442F76E2373F9B500C42DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2442F7752373F9B500C42DC2;
+			remoteInfo = "OpenCVFirstChapter-discrete_fourier_transform";
+		};
+		2442F79D2373F9B700C42DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442F76E2373F9B500C42DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2442F7752373F9B500C42DC2;
+			remoteInfo = "OpenCVFirstChapter-discrete_fourier_transform";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2442F7762373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVFirstChapter-discrete_fourier_transform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2442F7792373F9B500C42DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2442F77A2373F9B500C42DC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2442F77C2373F9B500C42DC2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2442F77D2373F9B500C42DC2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2442F77F2373F9B500C42DC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2442F7802373F9B500C42DC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2442F7832373F9B500C42DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2442F7852373F9B700C42DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2442F7882373F9B700C42DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2442F78A2373F9B700C42DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2442F78B2373F9B700C42DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2442F7912373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVFirstChapter-discrete_fourier_transformTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2442F7952373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFirstChapter_discrete_fourier_transformTests.m; sourceTree = "<group>"; };
+		2442F7972373F9B700C42DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2442F79C2373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVFirstChapter-discrete_fourier_transformUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2442F7A02373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFirstChapter_discrete_fourier_transformUITests.m; sourceTree = "<group>"; };
+		2442F7A22373F9B700C42DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2442F7AF2373FA5700C42DC2 /* DisccreteTransfromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisccreteTransfromViewController.h; sourceTree = "<group>"; };
+		2442F7B02373FA5700C42DC2 /* DisccreteTransfromViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DisccreteTransfromViewController.mm; sourceTree = "<group>"; };
+		325219F373617D4B142583A4 /* libPods-OpenCVFirstChapter-discrete_fourier_transform.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-discrete_fourier_transform.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C0253D0369EA76C3125809 /* libPods-OpenCVFirstChapter-discrete_fourier_transformTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-discrete_fourier_transformTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		696CE24C83208038D3A1124B /* Pods-OpenCVFirstChapter-discrete_fourier_transform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-discrete_fourier_transform.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform/Pods-OpenCVFirstChapter-discrete_fourier_transform.debug.xcconfig"; sourceTree = "<group>"; };
+		6ADB276DB3573BB97FFD7B68 /* Pods-OpenCVFirstChapter-discrete_fourier_transform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-discrete_fourier_transform.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform/Pods-OpenCVFirstChapter-discrete_fourier_transform.release.xcconfig"; sourceTree = "<group>"; };
+		7B03D7DDDE3B119172D6F2CD /* Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8627B400CC72CC685ADDACD1 /* Pods-OpenCVFirstChapter-discrete_fourier_transformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-discrete_fourier_transformTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transformTests/Pods-OpenCVFirstChapter-discrete_fourier_transformTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D12A5CCA951F4174A90F582C /* libPods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC84E9BC21F1AD94AE3D7FF6 /* Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EFC5A6B4984DF4AC6BBD38F0 /* Pods-OpenCVFirstChapter-discrete_fourier_transformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-discrete_fourier_transformTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transformTests/Pods-OpenCVFirstChapter-discrete_fourier_transformTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2442F7732373F9B500C42DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173BBAD4F257F63F33E888EB /* libPods-OpenCVFirstChapter-discrete_fourier_transform.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F78E2373F9B700C42DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3EA8491D2FEAB35BA597E77 /* libPods-OpenCVFirstChapter-discrete_fourier_transformTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7992373F9B700C42DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE02EA0D0A7EC27467BBAD59 /* libPods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2442F76D2373F9B500C42DC2 = {
+			isa = PBXGroup;
+			children = (
+				2442F7782373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform */,
+				2442F7942373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformTests */,
+				2442F79F2373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformUITests */,
+				2442F7772373F9B500C42DC2 /* Products */,
+				33F09FF09570CDBB8F741431 /* Pods */,
+				52361F0003371AD6E4C91656 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2442F7772373F9B500C42DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7762373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform.app */,
+				2442F7912373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformTests.xctest */,
+				2442F79C2373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2442F7782373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7AE2373FA1D00C42DC2 /* 离散傅立叶变换 */,
+				2442F7792373F9B500C42DC2 /* AppDelegate.h */,
+				2442F77A2373F9B500C42DC2 /* AppDelegate.m */,
+				2442F77C2373F9B500C42DC2 /* SceneDelegate.h */,
+				2442F77D2373F9B500C42DC2 /* SceneDelegate.m */,
+				2442F77F2373F9B500C42DC2 /* ViewController.h */,
+				2442F7802373F9B500C42DC2 /* ViewController.m */,
+				2442F7822373F9B500C42DC2 /* Main.storyboard */,
+				2442F7852373F9B700C42DC2 /* Assets.xcassets */,
+				2442F7872373F9B700C42DC2 /* LaunchScreen.storyboard */,
+				2442F78A2373F9B700C42DC2 /* Info.plist */,
+				2442F78B2373F9B700C42DC2 /* main.m */,
+			);
+			path = "OpenCVFirstChapter-discrete_fourier_transform";
+			sourceTree = "<group>";
+		};
+		2442F7942373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformTests */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7952373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformTests.m */,
+				2442F7972373F9B700C42DC2 /* Info.plist */,
+			);
+			path = "OpenCVFirstChapter-discrete_fourier_transformTests";
+			sourceTree = "<group>";
+		};
+		2442F79F2373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7A02373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformUITests.m */,
+				2442F7A22373F9B700C42DC2 /* Info.plist */,
+			);
+			path = "OpenCVFirstChapter-discrete_fourier_transformUITests";
+			sourceTree = "<group>";
+		};
+		2442F7AE2373FA1D00C42DC2 /* 离散傅立叶变换 */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7AF2373FA5700C42DC2 /* DisccreteTransfromViewController.h */,
+				2442F7B02373FA5700C42DC2 /* DisccreteTransfromViewController.mm */,
+			);
+			path = "离散傅立叶变换";
+			sourceTree = "<group>";
+		};
+		33F09FF09570CDBB8F741431 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				696CE24C83208038D3A1124B /* Pods-OpenCVFirstChapter-discrete_fourier_transform.debug.xcconfig */,
+				6ADB276DB3573BB97FFD7B68 /* Pods-OpenCVFirstChapter-discrete_fourier_transform.release.xcconfig */,
+				7B03D7DDDE3B119172D6F2CD /* Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.debug.xcconfig */,
+				EC84E9BC21F1AD94AE3D7FF6 /* Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.release.xcconfig */,
+				8627B400CC72CC685ADDACD1 /* Pods-OpenCVFirstChapter-discrete_fourier_transformTests.debug.xcconfig */,
+				EFC5A6B4984DF4AC6BBD38F0 /* Pods-OpenCVFirstChapter-discrete_fourier_transformTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52361F0003371AD6E4C91656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				325219F373617D4B142583A4 /* libPods-OpenCVFirstChapter-discrete_fourier_transform.a */,
+				D12A5CCA951F4174A90F582C /* libPods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.a */,
+				37C0253D0369EA76C3125809 /* libPods-OpenCVFirstChapter-discrete_fourier_transformTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2442F7752373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2442F7A52373F9B700C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-discrete_fourier_transform" */;
+			buildPhases = (
+				376719A58E36E35ECBAAC315 /* [CP] Check Pods Manifest.lock */,
+				2442F7722373F9B500C42DC2 /* Sources */,
+				2442F7732373F9B500C42DC2 /* Frameworks */,
+				2442F7742373F9B500C42DC2 /* Resources */,
+				50558A702A10BBF4F414AB23 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVFirstChapter-discrete_fourier_transform";
+			productName = "OpenCVFirstChapter-discrete_fourier_transform";
+			productReference = 2442F7762373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2442F7902373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2442F7A82373F9B700C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-discrete_fourier_transformTests" */;
+			buildPhases = (
+				31DFD9504EAA70D5C982E754 /* [CP] Check Pods Manifest.lock */,
+				2442F78D2373F9B700C42DC2 /* Sources */,
+				2442F78E2373F9B700C42DC2 /* Frameworks */,
+				2442F78F2373F9B700C42DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2442F7932373F9B700C42DC2 /* PBXTargetDependency */,
+			);
+			name = "OpenCVFirstChapter-discrete_fourier_transformTests";
+			productName = "OpenCVFirstChapter-discrete_fourier_transformTests";
+			productReference = 2442F7912373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2442F79B2373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2442F7AB2373F9B700C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-discrete_fourier_transformUITests" */;
+			buildPhases = (
+				7CA5C5694C235D9E803A8C5C /* [CP] Check Pods Manifest.lock */,
+				2442F7982373F9B700C42DC2 /* Sources */,
+				2442F7992373F9B700C42DC2 /* Frameworks */,
+				2442F79A2373F9B700C42DC2 /* Resources */,
+				B64C081476286EFD83C86231 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2442F79E2373F9B700C42DC2 /* PBXTargetDependency */,
+			);
+			name = "OpenCVFirstChapter-discrete_fourier_transformUITests";
+			productName = "OpenCVFirstChapter-discrete_fourier_transformUITests";
+			productReference = 2442F79C2373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2442F76E2373F9B500C42DC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					2442F7752373F9B500C42DC2 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					2442F7902373F9B700C42DC2 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 2442F7752373F9B500C42DC2;
+					};
+					2442F79B2373F9B700C42DC2 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 2442F7752373F9B500C42DC2;
+					};
+				};
+			};
+			buildConfigurationList = 2442F7712373F9B500C42DC2 /* Build configuration list for PBXProject "OpenCVFirstChapter-discrete_fourier_transform" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2442F76D2373F9B500C42DC2;
+			productRefGroup = 2442F7772373F9B500C42DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2442F7752373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform */,
+				2442F7902373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformTests */,
+				2442F79B2373F9B700C42DC2 /* OpenCVFirstChapter-discrete_fourier_transformUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2442F7742373F9B500C42DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7892373F9B700C42DC2 /* LaunchScreen.storyboard in Resources */,
+				2442F7862373F9B700C42DC2 /* Assets.xcassets in Resources */,
+				2442F7842373F9B500C42DC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F78F2373F9B700C42DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F79A2373F9B700C42DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31DFD9504EAA70D5C982E754 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-discrete_fourier_transformTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		376719A58E36E35ECBAAC315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-discrete_fourier_transform-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50558A702A10BBF4F414AB23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform/Pods-OpenCVFirstChapter-discrete_fourier_transform-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform/Pods-OpenCVFirstChapter-discrete_fourier_transform-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform/Pods-OpenCVFirstChapter-discrete_fourier_transform-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CA5C5694C235D9E803A8C5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64C081476286EFD83C86231 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests/Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2442F7722373F9B500C42DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7812373F9B500C42DC2 /* ViewController.m in Sources */,
+				2442F7B12373FA5700C42DC2 /* DisccreteTransfromViewController.mm in Sources */,
+				2442F77B2373F9B500C42DC2 /* AppDelegate.m in Sources */,
+				2442F78C2373F9B700C42DC2 /* main.m in Sources */,
+				2442F77E2373F9B500C42DC2 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F78D2373F9B700C42DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7962373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7982373F9B700C42DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7A12373F9B700C42DC2 /* OpenCVFirstChapter_discrete_fourier_transformUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2442F7932373F9B700C42DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2442F7752373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform */;
+			targetProxy = 2442F7922373F9B700C42DC2 /* PBXContainerItemProxy */;
+		};
+		2442F79E2373F9B700C42DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2442F7752373F9B500C42DC2 /* OpenCVFirstChapter-discrete_fourier_transform */;
+			targetProxy = 2442F79D2373F9B700C42DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2442F7822373F9B500C42DC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2442F7832373F9B500C42DC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2442F7872373F9B700C42DC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2442F7882373F9B700C42DC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2442F7A32373F9B700C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2442F7A42373F9B700C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2442F7A62373F9B700C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696CE24C83208038D3A1124B /* Pods-OpenCVFirstChapter-discrete_fourier_transform.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-discrete_fourier_transform/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-discrete-fourier-transform";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2442F7A72373F9B700C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ADB276DB3573BB97FFD7B68 /* Pods-OpenCVFirstChapter-discrete_fourier_transform.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-discrete_fourier_transform/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-discrete-fourier-transform";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2442F7A92373F9B700C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8627B400CC72CC685ADDACD1 /* Pods-OpenCVFirstChapter-discrete_fourier_transformTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-discrete_fourier_transformTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-discrete-fourier-transformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFirstChapter-discrete_fourier_transform.app/OpenCVFirstChapter-discrete_fourier_transform";
+			};
+			name = Debug;
+		};
+		2442F7AA2373F9B700C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC5A6B4984DF4AC6BBD38F0 /* Pods-OpenCVFirstChapter-discrete_fourier_transformTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-discrete_fourier_transformTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-discrete-fourier-transformTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFirstChapter-discrete_fourier_transform.app/OpenCVFirstChapter-discrete_fourier_transform";
+			};
+			name = Release;
+		};
+		2442F7AC2373F9B700C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B03D7DDDE3B119172D6F2CD /* Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-discrete_fourier_transformUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-discrete-fourier-transformUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVFirstChapter-discrete_fourier_transform";
+			};
+			name = Debug;
+		};
+		2442F7AD2373F9B700C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC84E9BC21F1AD94AE3D7FF6 /* Pods-OpenCVFirstChapter-discrete_fourier_transform-OpenCVFirstChapter-discrete_fourier_transformUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-discrete_fourier_transformUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-discrete-fourier-transformUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVFirstChapter-discrete_fourier_transform";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2442F7712373F9B500C42DC2 /* Build configuration list for PBXProject "OpenCVFirstChapter-discrete_fourier_transform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7A32373F9B700C42DC2 /* Debug */,
+				2442F7A42373F9B700C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2442F7A52373F9B700C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-discrete_fourier_transform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7A62373F9B700C42DC2 /* Debug */,
+				2442F7A72373F9B700C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2442F7A82373F9B700C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-discrete_fourier_transformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7A92373F9B700C42DC2 /* Debug */,
+				2442F7AA2373F9B700C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2442F7AB2373F9B700C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-discrete_fourier_transformUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7AC2373F9B700C42DC2 /* Debug */,
+				2442F7AD2373F9B700C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2442F76E2373F9B500C42DC2 /* Project object */;
+}

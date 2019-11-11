@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'OpenCVFirstChapter-discrete_fourier_transform' do
+  # Comment the next line if you don't want to use dynamic frameworks
+
+  # Pods for OpenCVFirstChapter-discrete_fourier_transform
+      pod 'OpenCVSource', :path => '../OpenCVSource'
+       pod 'OpenCVUtils', :path => '../OpenCVUtils'
+       pod 'OpenCVBase', :path => '../OpenCVBase'
+  target 'OpenCVFirstChapter-discrete_fourier_transformTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'OpenCVFirstChapter-discrete_fourier_transformUITests' do
+    # Pods for testing
+  end
+
+end

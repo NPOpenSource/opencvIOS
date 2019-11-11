@@ -50,7 +50,7 @@ RNG rng( 0xFFFFFFFF);
     imageView.image  = [self UIImageFromCVMat:image];
 
 //    [self Displaying_Big_End:image];
-
+    
 
 }
 -(void)Drawing_Random_Lines:(Mat)image{

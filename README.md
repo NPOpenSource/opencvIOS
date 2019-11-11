@@ -20,3 +20,5 @@ Opencv 中文网学习
 
 [OpenCV 之ios 随机数发生器&绘制文字](/OpenCVFirstChapter-randomGeneratorAndText)
 
+[OpenCV 之ios 离散傅立叶变换](/OpenCVFirstChapter-discrete_fourier_transform)
+
