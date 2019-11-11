@@ -27,8 +27,8 @@ using namespace std;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    UIImage * src1Image = [UIImage imageNamed:@"lena.jpg"];
-    UIImage * src1Image = [UIImage imageNamed:@"imageTextR.png"];
+    UIImage * src1Image = [UIImage imageNamed:@"lena.jpg"];
+//    UIImage * src1Image = [UIImage imageNamed:@"imageTextR.png"];
 
     
      Mat source = [self cvMatFromUIImage:src1Image];

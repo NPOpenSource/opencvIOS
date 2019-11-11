@@ -22,3 +22,5 @@ Opencv 中文网学习
 
 [OpenCV 之ios 离散傅立叶变换](/OpenCVFirstChapter-discrete_fourier_transform)
 
+[OpenCV 之ios 输入输出XML和YAML文件](/OpenCVFirstChapter-xmlAndYml)
+

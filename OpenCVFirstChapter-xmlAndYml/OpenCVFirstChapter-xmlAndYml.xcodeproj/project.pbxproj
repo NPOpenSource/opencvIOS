@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D7F8D12B118CBD5B845BE0E /* libPods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C5F390848C05547ED3172D /* libPods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.a */; };
+		0DFDF56099F57EBBD560879B /* libPods-OpenCVFirstChapter-xmlAndYmlTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F1E0EB4D5E1188A2199E1F /* libPods-OpenCVFirstChapter-xmlAndYmlTests.a */; };
+		2442F7C623795C8100C42DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7C523795C8100C42DC2 /* AppDelegate.m */; };
+		2442F7C923795C8100C42DC2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7C823795C8100C42DC2 /* SceneDelegate.m */; };
+		2442F7CC23795C8100C42DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7CB23795C8100C42DC2 /* ViewController.m */; };
+		2442F7CF23795C8100C42DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442F7CD23795C8100C42DC2 /* Main.storyboard */; };
+		2442F7D123795C8300C42DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2442F7D023795C8300C42DC2 /* Assets.xcassets */; };
+		2442F7D423795C8300C42DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442F7D223795C8300C42DC2 /* LaunchScreen.storyboard */; };
+		2442F7D723795C8300C42DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7D623795C8300C42DC2 /* main.m */; };
+		2442F7E123795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7E023795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlTests.m */; };
+		2442F7EC23795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7EB23795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlUITests.m */; };
+		2442F7FC23795ED200C42DC2 /* XmlAndYmlViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2442F7FB23795ED200C42DC2 /* XmlAndYmlViewController.mm */; };
+		42AD7FD8363D4371C22CBE9E /* libPods-OpenCVFirstChapter-xmlAndYml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4284B1680D3A77D92E252A /* libPods-OpenCVFirstChapter-xmlAndYml.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2442F7DD23795C8300C42DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442F7B923795C8000C42DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2442F7C023795C8100C42DC2;
+			remoteInfo = "OpenCVFirstChapter-xmlAndYml";
+		};
+		2442F7E823795C8300C42DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442F7B923795C8000C42DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2442F7C023795C8100C42DC2;
+			remoteInfo = "OpenCVFirstChapter-xmlAndYml";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		121127658D6A593838C8D167 /* Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1883BEDAC04BC1E23C0A803C /* Pods-OpenCVFirstChapter-xmlAndYml.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-xmlAndYml.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml/Pods-OpenCVFirstChapter-xmlAndYml.debug.xcconfig"; sourceTree = "<group>"; };
+		2442F7C123795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVFirstChapter-xmlAndYml.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2442F7C423795C8100C42DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2442F7C523795C8100C42DC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2442F7C723795C8100C42DC2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2442F7C823795C8100C42DC2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2442F7CA23795C8100C42DC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2442F7CB23795C8100C42DC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2442F7CE23795C8100C42DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2442F7D023795C8300C42DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2442F7D323795C8300C42DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2442F7D523795C8300C42DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2442F7D623795C8300C42DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2442F7DC23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVFirstChapter-xmlAndYmlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2442F7E023795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFirstChapter_xmlAndYmlTests.m; sourceTree = "<group>"; };
+		2442F7E223795C8300C42DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2442F7E723795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVFirstChapter-xmlAndYmlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2442F7EB23795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVFirstChapter_xmlAndYmlUITests.m; sourceTree = "<group>"; };
+		2442F7ED23795C8300C42DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2442F7FA23795ED200C42DC2 /* XmlAndYmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XmlAndYmlViewController.h; sourceTree = "<group>"; };
+		2442F7FB23795ED200C42DC2 /* XmlAndYmlViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = XmlAndYmlViewController.mm; sourceTree = "<group>"; };
+		40224F8EDC6DF936F192114C /* Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C7631BB8E6138A3E0E19758 /* Pods-OpenCVFirstChapter-xmlAndYmlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-xmlAndYmlTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-xmlAndYmlTests/Pods-OpenCVFirstChapter-xmlAndYmlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53F1E0EB4D5E1188A2199E1F /* libPods-OpenCVFirstChapter-xmlAndYmlTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-xmlAndYmlTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE1261BC41BFB79CDAE7E79 /* Pods-OpenCVFirstChapter-xmlAndYml.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-xmlAndYml.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml/Pods-OpenCVFirstChapter-xmlAndYml.release.xcconfig"; sourceTree = "<group>"; };
+		9C4284B1680D3A77D92E252A /* libPods-OpenCVFirstChapter-xmlAndYml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-xmlAndYml.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C5F390848C05547ED3172D /* libPods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD065AE0E6CD12827E062C8B /* Pods-OpenCVFirstChapter-xmlAndYmlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVFirstChapter-xmlAndYmlTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVFirstChapter-xmlAndYmlTests/Pods-OpenCVFirstChapter-xmlAndYmlTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2442F7BE23795C8100C42DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AD7FD8363D4371C22CBE9E /* libPods-OpenCVFirstChapter-xmlAndYml.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7D923795C8300C42DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFDF56099F57EBBD560879B /* libPods-OpenCVFirstChapter-xmlAndYmlTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7E423795C8300C42DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7F8D12B118CBD5B845BE0E /* libPods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2442F7B823795C8000C42DC2 = {
+			isa = PBXGroup;
+			children = (
+				2442F7C323795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml */,
+				2442F7DF23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlTests */,
+				2442F7EA23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlUITests */,
+				2442F7C223795C8100C42DC2 /* Products */,
+				36219F5E63404BF432E4DA16 /* Pods */,
+				E71250CEB1E292EA6A746DA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2442F7C223795C8100C42DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7C123795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml.app */,
+				2442F7DC23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlTests.xctest */,
+				2442F7E723795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2442F7C323795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7F923795EB600C42DC2 /* xmlAndyml */,
+				2442F7C423795C8100C42DC2 /* AppDelegate.h */,
+				2442F7C523795C8100C42DC2 /* AppDelegate.m */,
+				2442F7C723795C8100C42DC2 /* SceneDelegate.h */,
+				2442F7C823795C8100C42DC2 /* SceneDelegate.m */,
+				2442F7CA23795C8100C42DC2 /* ViewController.h */,
+				2442F7CB23795C8100C42DC2 /* ViewController.m */,
+				2442F7CD23795C8100C42DC2 /* Main.storyboard */,
+				2442F7D023795C8300C42DC2 /* Assets.xcassets */,
+				2442F7D223795C8300C42DC2 /* LaunchScreen.storyboard */,
+				2442F7D523795C8300C42DC2 /* Info.plist */,
+				2442F7D623795C8300C42DC2 /* main.m */,
+			);
+			path = "OpenCVFirstChapter-xmlAndYml";
+			sourceTree = "<group>";
+		};
+		2442F7DF23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlTests */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7E023795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlTests.m */,
+				2442F7E223795C8300C42DC2 /* Info.plist */,
+			);
+			path = "OpenCVFirstChapter-xmlAndYmlTests";
+			sourceTree = "<group>";
+		};
+		2442F7EA23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7EB23795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlUITests.m */,
+				2442F7ED23795C8300C42DC2 /* Info.plist */,
+			);
+			path = "OpenCVFirstChapter-xmlAndYmlUITests";
+			sourceTree = "<group>";
+		};
+		2442F7F923795EB600C42DC2 /* xmlAndyml */ = {
+			isa = PBXGroup;
+			children = (
+				2442F7FA23795ED200C42DC2 /* XmlAndYmlViewController.h */,
+				2442F7FB23795ED200C42DC2 /* XmlAndYmlViewController.mm */,
+			);
+			path = xmlAndyml;
+			sourceTree = "<group>";
+		};
+		36219F5E63404BF432E4DA16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1883BEDAC04BC1E23C0A803C /* Pods-OpenCVFirstChapter-xmlAndYml.debug.xcconfig */,
+				8EE1261BC41BFB79CDAE7E79 /* Pods-OpenCVFirstChapter-xmlAndYml.release.xcconfig */,
+				121127658D6A593838C8D167 /* Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.debug.xcconfig */,
+				40224F8EDC6DF936F192114C /* Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.release.xcconfig */,
+				4C7631BB8E6138A3E0E19758 /* Pods-OpenCVFirstChapter-xmlAndYmlTests.debug.xcconfig */,
+				CD065AE0E6CD12827E062C8B /* Pods-OpenCVFirstChapter-xmlAndYmlTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E71250CEB1E292EA6A746DA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C4284B1680D3A77D92E252A /* libPods-OpenCVFirstChapter-xmlAndYml.a */,
+				B0C5F390848C05547ED3172D /* libPods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.a */,
+				53F1E0EB4D5E1188A2199E1F /* libPods-OpenCVFirstChapter-xmlAndYmlTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2442F7C023795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2442F7F023795C8300C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-xmlAndYml" */;
+			buildPhases = (
+				AD511125D831592E9058D876 /* [CP] Check Pods Manifest.lock */,
+				2442F7BD23795C8100C42DC2 /* Sources */,
+				2442F7BE23795C8100C42DC2 /* Frameworks */,
+				2442F7BF23795C8100C42DC2 /* Resources */,
+				D079E9144C067314300230D9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVFirstChapter-xmlAndYml";
+			productName = "OpenCVFirstChapter-xmlAndYml";
+			productReference = 2442F7C123795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2442F7DB23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2442F7F323795C8300C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-xmlAndYmlTests" */;
+			buildPhases = (
+				7C518D31CD2FD069E396A748 /* [CP] Check Pods Manifest.lock */,
+				2442F7D823795C8300C42DC2 /* Sources */,
+				2442F7D923795C8300C42DC2 /* Frameworks */,
+				2442F7DA23795C8300C42DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2442F7DE23795C8300C42DC2 /* PBXTargetDependency */,
+			);
+			name = "OpenCVFirstChapter-xmlAndYmlTests";
+			productName = "OpenCVFirstChapter-xmlAndYmlTests";
+			productReference = 2442F7DC23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2442F7E623795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2442F7F623795C8300C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-xmlAndYmlUITests" */;
+			buildPhases = (
+				C33538E6F2CEA6F40E74C09C /* [CP] Check Pods Manifest.lock */,
+				2442F7E323795C8300C42DC2 /* Sources */,
+				2442F7E423795C8300C42DC2 /* Frameworks */,
+				2442F7E523795C8300C42DC2 /* Resources */,
+				4294BBE8428D48EC330D1D4E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2442F7E923795C8300C42DC2 /* PBXTargetDependency */,
+			);
+			name = "OpenCVFirstChapter-xmlAndYmlUITests";
+			productName = "OpenCVFirstChapter-xmlAndYmlUITests";
+			productReference = 2442F7E723795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2442F7B923795C8000C42DC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					2442F7C023795C8100C42DC2 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					2442F7DB23795C8300C42DC2 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 2442F7C023795C8100C42DC2;
+					};
+					2442F7E623795C8300C42DC2 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 2442F7C023795C8100C42DC2;
+					};
+				};
+			};
+			buildConfigurationList = 2442F7BC23795C8000C42DC2 /* Build configuration list for PBXProject "OpenCVFirstChapter-xmlAndYml" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2442F7B823795C8000C42DC2;
+			productRefGroup = 2442F7C223795C8100C42DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2442F7C023795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml */,
+				2442F7DB23795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlTests */,
+				2442F7E623795C8300C42DC2 /* OpenCVFirstChapter-xmlAndYmlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2442F7BF23795C8100C42DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7D423795C8300C42DC2 /* LaunchScreen.storyboard in Resources */,
+				2442F7D123795C8300C42DC2 /* Assets.xcassets in Resources */,
+				2442F7CF23795C8100C42DC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7DA23795C8300C42DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7E523795C8300C42DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4294BBE8428D48EC330D1D4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C518D31CD2FD069E396A748 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-xmlAndYmlTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD511125D831592E9058D876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-xmlAndYml-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33538E6F2CEA6F40E74C09C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D079E9144C067314300230D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml/Pods-OpenCVFirstChapter-xmlAndYml-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml/Pods-OpenCVFirstChapter-xmlAndYml-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVFirstChapter-xmlAndYml/Pods-OpenCVFirstChapter-xmlAndYml-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2442F7BD23795C8100C42DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7CC23795C8100C42DC2 /* ViewController.m in Sources */,
+				2442F7FC23795ED200C42DC2 /* XmlAndYmlViewController.mm in Sources */,
+				2442F7C623795C8100C42DC2 /* AppDelegate.m in Sources */,
+				2442F7D723795C8300C42DC2 /* main.m in Sources */,
+				2442F7C923795C8100C42DC2 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7D823795C8300C42DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7E123795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2442F7E323795C8300C42DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442F7EC23795C8300C42DC2 /* OpenCVFirstChapter_xmlAndYmlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2442F7DE23795C8300C42DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2442F7C023795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml */;
+			targetProxy = 2442F7DD23795C8300C42DC2 /* PBXContainerItemProxy */;
+		};
+		2442F7E923795C8300C42DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2442F7C023795C8100C42DC2 /* OpenCVFirstChapter-xmlAndYml */;
+			targetProxy = 2442F7E823795C8300C42DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2442F7CD23795C8100C42DC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2442F7CE23795C8100C42DC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2442F7D223795C8300C42DC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2442F7D323795C8300C42DC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2442F7EE23795C8300C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2442F7EF23795C8300C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2442F7F123795C8300C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1883BEDAC04BC1E23C0A803C /* Pods-OpenCVFirstChapter-xmlAndYml.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-xmlAndYml/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-xmlAndYml";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2442F7F223795C8300C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EE1261BC41BFB79CDAE7E79 /* Pods-OpenCVFirstChapter-xmlAndYml.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-xmlAndYml/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-xmlAndYml";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2442F7F423795C8300C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7631BB8E6138A3E0E19758 /* Pods-OpenCVFirstChapter-xmlAndYmlTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-xmlAndYmlTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-xmlAndYmlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFirstChapter-xmlAndYml.app/OpenCVFirstChapter-xmlAndYml";
+			};
+			name = Debug;
+		};
+		2442F7F523795C8300C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD065AE0E6CD12827E062C8B /* Pods-OpenCVFirstChapter-xmlAndYmlTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-xmlAndYmlTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-xmlAndYmlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVFirstChapter-xmlAndYml.app/OpenCVFirstChapter-xmlAndYml";
+			};
+			name = Release;
+		};
+		2442F7F723795C8300C42DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 121127658D6A593838C8D167 /* Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-xmlAndYmlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-xmlAndYmlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVFirstChapter-xmlAndYml";
+			};
+			name = Debug;
+		};
+		2442F7F823795C8300C42DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40224F8EDC6DF936F192114C /* Pods-OpenCVFirstChapter-xmlAndYml-OpenCVFirstChapter-xmlAndYmlUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVFirstChapter-xmlAndYmlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVFirstChapter-xmlAndYmlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVFirstChapter-xmlAndYml";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2442F7BC23795C8000C42DC2 /* Build configuration list for PBXProject "OpenCVFirstChapter-xmlAndYml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7EE23795C8300C42DC2 /* Debug */,
+				2442F7EF23795C8300C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2442F7F023795C8300C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-xmlAndYml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7F123795C8300C42DC2 /* Debug */,
+				2442F7F223795C8300C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2442F7F323795C8300C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-xmlAndYmlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7F423795C8300C42DC2 /* Debug */,
+				2442F7F523795C8300C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2442F7F623795C8300C42DC2 /* Build configuration list for PBXNativeTarget "OpenCVFirstChapter-xmlAndYmlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2442F7F723795C8300C42DC2 /* Debug */,
+				2442F7F823795C8300C42DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2442F7B923795C8000C42DC2 /* Project object */;
+}
