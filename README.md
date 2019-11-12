@@ -24,3 +24,11 @@ Opencv 中文网学习
 
 [OpenCV 之ios 输入输出XML和YAML文件](/OpenCVFirstChapter-xmlAndYml)
 
+
+
+# 第二章 *imgproc* 模块. 图像处理
+
+[OpenCV 之ios 图像平滑处理](/OpenCVSecondChapter-imageDeal)
+
+
+
