@@ -30,5 +30,7 @@ Opencv 中文网学习
 
 [OpenCV 之ios 图像平滑处理](/OpenCVSecondChapter-imageDeal)
 
+[OpenCV 之ios 腐蚀与膨胀](/OpenCVSecondChapter-erodeAndDilate)
+
 
 

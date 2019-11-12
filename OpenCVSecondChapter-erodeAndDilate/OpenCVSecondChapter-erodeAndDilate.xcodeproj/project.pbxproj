@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24EF2129237A826C00B25DA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF2128237A826C00B25DA7 /* AppDelegate.m */; };
+		24EF212C237A826C00B25DA7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF212B237A826C00B25DA7 /* SceneDelegate.m */; };
+		24EF212F237A826C00B25DA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF212E237A826C00B25DA7 /* ViewController.m */; };
+		24EF2132237A826C00B25DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF2130237A826C00B25DA7 /* Main.storyboard */; };
+		24EF2134237A826E00B25DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF2133237A826E00B25DA7 /* Assets.xcassets */; };
+		24EF2137237A826E00B25DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF2135237A826E00B25DA7 /* LaunchScreen.storyboard */; };
+		24EF213A237A826E00B25DA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF2139237A826E00B25DA7 /* main.m */; };
+		24EF2144237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF2143237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateTests.m */; };
+		24EF214F237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF214E237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateUITests.m */; };
+		24EF215F237A837100B25DA7 /* ErodeAndDilateViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24EF215E237A837100B25DA7 /* ErodeAndDilateViewController.mm */; };
+		49D2A88507BD93C4F8A9938E /* libPods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19092075292D36CFEC2B08E1 /* libPods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.a */; };
+		850A6CF1801B7609F164CC7F /* libPods-OpenCVSecondChapter-erodeAndDilateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC3E3728D0A53A0961BBF78 /* libPods-OpenCVSecondChapter-erodeAndDilateTests.a */; };
+		C6A05EBF72B508DE055EF5C6 /* libPods-OpenCVSecondChapter-erodeAndDilate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EE198160D25CEB6ED1BD28 /* libPods-OpenCVSecondChapter-erodeAndDilate.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24EF2140237A826E00B25DA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EF211C237A826C00B25DA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24EF2123237A826C00B25DA7;
+			remoteInfo = "OpenCVSecondChapter-erodeAndDilate";
+		};
+		24EF214B237A826E00B25DA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EF211C237A826C00B25DA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24EF2123237A826C00B25DA7;
+			remoteInfo = "OpenCVSecondChapter-erodeAndDilate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F3438159D85D6614899CC6E /* Pods-OpenCVSecondChapter-erodeAndDilateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-erodeAndDilateTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilateTests/Pods-OpenCVSecondChapter-erodeAndDilateTests.release.xcconfig"; sourceTree = "<group>"; };
+		19092075292D36CFEC2B08E1 /* libPods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF2124237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVSecondChapter-erodeAndDilate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF2127237A826C00B25DA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24EF2128237A826C00B25DA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24EF212A237A826C00B25DA7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24EF212B237A826C00B25DA7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24EF212D237A826C00B25DA7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24EF212E237A826C00B25DA7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24EF2131237A826C00B25DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24EF2133237A826E00B25DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24EF2136237A826E00B25DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24EF2138237A826E00B25DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF2139237A826E00B25DA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24EF213F237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-erodeAndDilateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF2143237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_erodeAndDilateTests.m; sourceTree = "<group>"; };
+		24EF2145237A826E00B25DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF214A237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-erodeAndDilateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF214E237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_erodeAndDilateUITests.m; sourceTree = "<group>"; };
+		24EF2150237A826E00B25DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF215D237A837100B25DA7 /* ErodeAndDilateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErodeAndDilateViewController.h; sourceTree = "<group>"; };
+		24EF215E237A837100B25DA7 /* ErodeAndDilateViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ErodeAndDilateViewController.mm; sourceTree = "<group>"; };
+		3657D8E19109B9465B99BABE /* Pods-OpenCVSecondChapter-erodeAndDilate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-erodeAndDilate.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate/Pods-OpenCVSecondChapter-erodeAndDilate.release.xcconfig"; sourceTree = "<group>"; };
+		3AC3E3728D0A53A0961BBF78 /* libPods-OpenCVSecondChapter-erodeAndDilateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-erodeAndDilateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EE198160D25CEB6ED1BD28 /* libPods-OpenCVSecondChapter-erodeAndDilate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-erodeAndDilate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B53B88B1365B27793D850F3 /* Pods-OpenCVSecondChapter-erodeAndDilateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-erodeAndDilateTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilateTests/Pods-OpenCVSecondChapter-erodeAndDilateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8071CF8FF85AED4E1D04E60C /* Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF075C72B3AA76ABB3AD53D4 /* Pods-OpenCVSecondChapter-erodeAndDilate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-erodeAndDilate.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate/Pods-OpenCVSecondChapter-erodeAndDilate.debug.xcconfig"; sourceTree = "<group>"; };
+		E8004BF10C62FBAFA838AEB6 /* Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24EF2121237A826C00B25DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A05EBF72B508DE055EF5C6 /* libPods-OpenCVSecondChapter-erodeAndDilate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF213C237A826E00B25DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850A6CF1801B7609F164CC7F /* libPods-OpenCVSecondChapter-erodeAndDilateTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF2147237A826E00B25DA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D2A88507BD93C4F8A9938E /* libPods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24EF211B237A826C00B25DA7 = {
+			isa = PBXGroup;
+			children = (
+				24EF2126237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate */,
+				24EF2142237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateTests */,
+				24EF214D237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateUITests */,
+				24EF2125237A826C00B25DA7 /* Products */,
+				8130F56CDD72EBF62DE75F08 /* Pods */,
+				A50FFF998F122CA953953150 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24EF2125237A826C00B25DA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24EF2124237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate.app */,
+				24EF213F237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateTests.xctest */,
+				24EF214A237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24EF2126237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate */ = {
+			isa = PBXGroup;
+			children = (
+				24EF215C237A835000B25DA7 /* 膨胀与腐蚀 */,
+				24EF2127237A826C00B25DA7 /* AppDelegate.h */,
+				24EF2128237A826C00B25DA7 /* AppDelegate.m */,
+				24EF212A237A826C00B25DA7 /* SceneDelegate.h */,
+				24EF212B237A826C00B25DA7 /* SceneDelegate.m */,
+				24EF212D237A826C00B25DA7 /* ViewController.h */,
+				24EF212E237A826C00B25DA7 /* ViewController.m */,
+				24EF2130237A826C00B25DA7 /* Main.storyboard */,
+				24EF2133237A826E00B25DA7 /* Assets.xcassets */,
+				24EF2135237A826E00B25DA7 /* LaunchScreen.storyboard */,
+				24EF2138237A826E00B25DA7 /* Info.plist */,
+				24EF2139237A826E00B25DA7 /* main.m */,
+			);
+			path = "OpenCVSecondChapter-erodeAndDilate";
+			sourceTree = "<group>";
+		};
+		24EF2142237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateTests */ = {
+			isa = PBXGroup;
+			children = (
+				24EF2143237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateTests.m */,
+				24EF2145237A826E00B25DA7 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-erodeAndDilateTests";
+			sourceTree = "<group>";
+		};
+		24EF214D237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24EF214E237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateUITests.m */,
+				24EF2150237A826E00B25DA7 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-erodeAndDilateUITests";
+			sourceTree = "<group>";
+		};
+		24EF215C237A835000B25DA7 /* 膨胀与腐蚀 */ = {
+			isa = PBXGroup;
+			children = (
+				24EF215D237A837100B25DA7 /* ErodeAndDilateViewController.h */,
+				24EF215E237A837100B25DA7 /* ErodeAndDilateViewController.mm */,
+			);
+			path = "膨胀与腐蚀";
+			sourceTree = "<group>";
+		};
+		8130F56CDD72EBF62DE75F08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF075C72B3AA76ABB3AD53D4 /* Pods-OpenCVSecondChapter-erodeAndDilate.debug.xcconfig */,
+				3657D8E19109B9465B99BABE /* Pods-OpenCVSecondChapter-erodeAndDilate.release.xcconfig */,
+				E8004BF10C62FBAFA838AEB6 /* Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.debug.xcconfig */,
+				8071CF8FF85AED4E1D04E60C /* Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.release.xcconfig */,
+				7B53B88B1365B27793D850F3 /* Pods-OpenCVSecondChapter-erodeAndDilateTests.debug.xcconfig */,
+				0F3438159D85D6614899CC6E /* Pods-OpenCVSecondChapter-erodeAndDilateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A50FFF998F122CA953953150 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64EE198160D25CEB6ED1BD28 /* libPods-OpenCVSecondChapter-erodeAndDilate.a */,
+				19092075292D36CFEC2B08E1 /* libPods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.a */,
+				3AC3E3728D0A53A0961BBF78 /* libPods-OpenCVSecondChapter-erodeAndDilateTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24EF2123237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EF2153237A826E00B25DA7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-erodeAndDilate" */;
+			buildPhases = (
+				C2EDAA4AD0532762B0F9E6D0 /* [CP] Check Pods Manifest.lock */,
+				24EF2120237A826C00B25DA7 /* Sources */,
+				24EF2121237A826C00B25DA7 /* Frameworks */,
+				24EF2122237A826C00B25DA7 /* Resources */,
+				0886D94C52DFA5332067C423 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVSecondChapter-erodeAndDilate";
+			productName = "OpenCVSecondChapter-erodeAndDilate";
+			productReference = 24EF2124237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24EF213E237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EF2156237A826E00B25DA7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-erodeAndDilateTests" */;
+			buildPhases = (
+				1B7AF639C00B81D498E7706B /* [CP] Check Pods Manifest.lock */,
+				24EF213B237A826E00B25DA7 /* Sources */,
+				24EF213C237A826E00B25DA7 /* Frameworks */,
+				24EF213D237A826E00B25DA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24EF2141237A826E00B25DA7 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-erodeAndDilateTests";
+			productName = "OpenCVSecondChapter-erodeAndDilateTests";
+			productReference = 24EF213F237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24EF2149237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EF2159237A826E00B25DA7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-erodeAndDilateUITests" */;
+			buildPhases = (
+				8973B221C6B0067757781F09 /* [CP] Check Pods Manifest.lock */,
+				24EF2146237A826E00B25DA7 /* Sources */,
+				24EF2147237A826E00B25DA7 /* Frameworks */,
+				24EF2148237A826E00B25DA7 /* Resources */,
+				ECBC68A8F0E56C8AFE5DECD8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24EF214C237A826E00B25DA7 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-erodeAndDilateUITests";
+			productName = "OpenCVSecondChapter-erodeAndDilateUITests";
+			productReference = 24EF214A237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24EF211C237A826C00B25DA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					24EF2123237A826C00B25DA7 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					24EF213E237A826E00B25DA7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24EF2123237A826C00B25DA7;
+					};
+					24EF2149237A826E00B25DA7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24EF2123237A826C00B25DA7;
+					};
+				};
+			};
+			buildConfigurationList = 24EF211F237A826C00B25DA7 /* Build configuration list for PBXProject "OpenCVSecondChapter-erodeAndDilate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24EF211B237A826C00B25DA7;
+			productRefGroup = 24EF2125237A826C00B25DA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24EF2123237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate */,
+				24EF213E237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateTests */,
+				24EF2149237A826E00B25DA7 /* OpenCVSecondChapter-erodeAndDilateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24EF2122237A826C00B25DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF2137237A826E00B25DA7 /* LaunchScreen.storyboard in Resources */,
+				24EF2134237A826E00B25DA7 /* Assets.xcassets in Resources */,
+				24EF2132237A826C00B25DA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF213D237A826E00B25DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF2148237A826E00B25DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0886D94C52DFA5332067C423 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate/Pods-OpenCVSecondChapter-erodeAndDilate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate/Pods-OpenCVSecondChapter-erodeAndDilate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate/Pods-OpenCVSecondChapter-erodeAndDilate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B7AF639C00B81D498E7706B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-erodeAndDilateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8973B221C6B0067757781F09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2EDAA4AD0532762B0F9E6D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-erodeAndDilate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECBC68A8F0E56C8AFE5DECD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests/Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24EF2120237A826C00B25DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF212F237A826C00B25DA7 /* ViewController.m in Sources */,
+				24EF2129237A826C00B25DA7 /* AppDelegate.m in Sources */,
+				24EF215F237A837100B25DA7 /* ErodeAndDilateViewController.mm in Sources */,
+				24EF213A237A826E00B25DA7 /* main.m in Sources */,
+				24EF212C237A826C00B25DA7 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF213B237A826E00B25DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF2144237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EF2146237A826E00B25DA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF214F237A826E00B25DA7 /* OpenCVSecondChapter_erodeAndDilateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24EF2141237A826E00B25DA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24EF2123237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate */;
+			targetProxy = 24EF2140237A826E00B25DA7 /* PBXContainerItemProxy */;
+		};
+		24EF214C237A826E00B25DA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24EF2123237A826C00B25DA7 /* OpenCVSecondChapter-erodeAndDilate */;
+			targetProxy = 24EF214B237A826E00B25DA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24EF2130237A826C00B25DA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24EF2131237A826C00B25DA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24EF2135237A826E00B25DA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24EF2136237A826E00B25DA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24EF2151237A826E00B25DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24EF2152237A826E00B25DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24EF2154237A826E00B25DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF075C72B3AA76ABB3AD53D4 /* Pods-OpenCVSecondChapter-erodeAndDilate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-erodeAndDilate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-erodeAndDilate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24EF2155237A826E00B25DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3657D8E19109B9465B99BABE /* Pods-OpenCVSecondChapter-erodeAndDilate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-erodeAndDilate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-erodeAndDilate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24EF2157237A826E00B25DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B53B88B1365B27793D850F3 /* Pods-OpenCVSecondChapter-erodeAndDilateTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-erodeAndDilateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-erodeAndDilateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-erodeAndDilate.app/OpenCVSecondChapter-erodeAndDilate";
+			};
+			name = Debug;
+		};
+		24EF2158237A826E00B25DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3438159D85D6614899CC6E /* Pods-OpenCVSecondChapter-erodeAndDilateTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-erodeAndDilateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-erodeAndDilateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-erodeAndDilate.app/OpenCVSecondChapter-erodeAndDilate";
+			};
+			name = Release;
+		};
+		24EF215A237A826E00B25DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8004BF10C62FBAFA838AEB6 /* Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-erodeAndDilateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-erodeAndDilateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-erodeAndDilate";
+			};
+			name = Debug;
+		};
+		24EF215B237A826E00B25DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8071CF8FF85AED4E1D04E60C /* Pods-OpenCVSecondChapter-erodeAndDilate-OpenCVSecondChapter-erodeAndDilateUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-erodeAndDilateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-erodeAndDilateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-erodeAndDilate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24EF211F237A826C00B25DA7 /* Build configuration list for PBXProject "OpenCVSecondChapter-erodeAndDilate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF2151237A826E00B25DA7 /* Debug */,
+				24EF2152237A826E00B25DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EF2153237A826E00B25DA7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-erodeAndDilate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF2154237A826E00B25DA7 /* Debug */,
+				24EF2155237A826E00B25DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EF2156237A826E00B25DA7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-erodeAndDilateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF2157237A826E00B25DA7 /* Debug */,
+				24EF2158237A826E00B25DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EF2159237A826E00B25DA7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-erodeAndDilateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF215A237A826E00B25DA7 /* Debug */,
+				24EF215B237A826E00B25DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24EF211C237A826C00B25DA7 /* Project object */;
+}

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OCVBaseViewController : UIViewController
 -(UIImageView *)createImageViewInRect:(CGRect)frame;
 -(UISlider *)createSliderFrame:(CGRect )frame maxValue:(float)maxValue minValue:(float)intValue block:(void(^)(float value))exeBlock;
+-(UIButton *)createButtonFrame:(CGRect)frame title:(NSString *)title Block:(NSString*(^)(int hitCount))exeBlock;
 @end
 
 NS_ASSUME_NONNULL_END
