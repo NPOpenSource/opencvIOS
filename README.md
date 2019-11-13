@@ -44,6 +44,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios  Sobel 导数](OpenCVSecondChapter-Sobel)
 
+[OpenCV 之ios Laplace 算子](OpenCVSecondChapter-Laplace)
+
 # 
 
 

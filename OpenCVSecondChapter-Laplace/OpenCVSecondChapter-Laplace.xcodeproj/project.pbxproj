@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D275CA237C2039001FB9E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D275C9237C2039001FB9E9 /* AppDelegate.m */; };
+		24D275CD237C2039001FB9E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D275CC237C2039001FB9E9 /* SceneDelegate.m */; };
+		24D275D0237C2039001FB9E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D275CF237C2039001FB9E9 /* ViewController.m */; };
+		24D275D3237C2039001FB9E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D275D1237C2039001FB9E9 /* Main.storyboard */; };
+		24D275D5237C203A001FB9E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D275D4237C203A001FB9E9 /* Assets.xcassets */; };
+		24D275D8237C203A001FB9E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D275D6237C203A001FB9E9 /* LaunchScreen.storyboard */; };
+		24D275DB237C203A001FB9E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D275DA237C203A001FB9E9 /* main.m */; };
+		24D275E5237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D275E4237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceTests.m */; };
+		24D275F0237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D275EF237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceUITests.m */; };
+		24D27600237C20C1001FB9E9 /* LaplaceViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24D275FF237C20C1001FB9E9 /* LaplaceViewController.mm */; };
+		666A7466FB5E09A8C92E2CC4 /* libPods-OpenCVSecondChapter-Laplace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3DEEAFFCC6FAC136D64103 /* libPods-OpenCVSecondChapter-Laplace.a */; };
+		D2D3F97B06A5D8112EBA99F4 /* libPods-OpenCVSecondChapter-LaplaceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F614A15E05BD17A7DD06A234 /* libPods-OpenCVSecondChapter-LaplaceTests.a */; };
+		FD50C4F97FA705E6F83349FF /* libPods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 788C291F62F8100CA9889FE3 /* libPods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24D275E1237C203B001FB9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D275BD237C2039001FB9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D275C4237C2039001FB9E9;
+			remoteInfo = "OpenCVSecondChapter-Laplace";
+		};
+		24D275EC237C203B001FB9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D275BD237C2039001FB9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D275C4237C2039001FB9E9;
+			remoteInfo = "OpenCVSecondChapter-Laplace";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24D275C5237C2039001FB9E9 /* OpenCVSecondChapter-Laplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVSecondChapter-Laplace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D275C8237C2039001FB9E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24D275C9237C2039001FB9E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24D275CB237C2039001FB9E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24D275CC237C2039001FB9E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24D275CE237C2039001FB9E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24D275CF237C2039001FB9E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24D275D2237C2039001FB9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24D275D4237C203A001FB9E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24D275D7237C203A001FB9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24D275D9237C203A001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D275DA237C203A001FB9E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24D275E0237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-LaplaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D275E4237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_LaplaceTests.m; sourceTree = "<group>"; };
+		24D275E6237C203B001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D275EB237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-LaplaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D275EF237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_LaplaceUITests.m; sourceTree = "<group>"; };
+		24D275F1237C203B001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D275FE237C20C1001FB9E9 /* LaplaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaplaceViewController.h; sourceTree = "<group>"; };
+		24D275FF237C20C1001FB9E9 /* LaplaceViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LaplaceViewController.mm; sourceTree = "<group>"; };
+		3B3DEEAFFCC6FAC136D64103 /* libPods-OpenCVSecondChapter-Laplace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-Laplace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		433EBFBF44F2EAF8E29158C8 /* Pods-OpenCVSecondChapter-Laplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Laplace.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Laplace/Pods-OpenCVSecondChapter-Laplace.debug.xcconfig"; sourceTree = "<group>"; };
+		788C291F62F8100CA9889FE3 /* libPods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906C5EA3885417E59F625D86 /* Pods-OpenCVSecondChapter-LaplaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-LaplaceTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-LaplaceTests/Pods-OpenCVSecondChapter-LaplaceTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA171CB62633AE24AD3995F5 /* Pods-OpenCVSecondChapter-Laplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Laplace.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Laplace/Pods-OpenCVSecondChapter-Laplace.release.xcconfig"; sourceTree = "<group>"; };
+		D42F49E2D2B223A13BC93EC0 /* Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBC2636C08C2D71B8A6225E8 /* Pods-OpenCVSecondChapter-LaplaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-LaplaceTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-LaplaceTests/Pods-OpenCVSecondChapter-LaplaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F614A15E05BD17A7DD06A234 /* libPods-OpenCVSecondChapter-LaplaceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-LaplaceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC079D88BEEE3DF7BB9922DB /* Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D275C2237C2039001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666A7466FB5E09A8C92E2CC4 /* libPods-OpenCVSecondChapter-Laplace.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275DD237C203B001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D3F97B06A5D8112EBA99F4 /* libPods-OpenCVSecondChapter-LaplaceTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275E8237C203B001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD50C4F97FA705E6F83349FF /* libPods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D275BC237C2039001FB9E9 = {
+			isa = PBXGroup;
+			children = (
+				24D275C7237C2039001FB9E9 /* OpenCVSecondChapter-Laplace */,
+				24D275E3237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceTests */,
+				24D275EE237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceUITests */,
+				24D275C6237C2039001FB9E9 /* Products */,
+				DF678D1214A13464A0A9AE59 /* Pods */,
+				FD0FFBA52E1F951A1AD39B58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24D275C6237C2039001FB9E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D275C5237C2039001FB9E9 /* OpenCVSecondChapter-Laplace.app */,
+				24D275E0237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceTests.xctest */,
+				24D275EB237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D275C7237C2039001FB9E9 /* OpenCVSecondChapter-Laplace */ = {
+			isa = PBXGroup;
+			children = (
+				24D275FD237C20A1001FB9E9 /* laplace算子 */,
+				24D275C8237C2039001FB9E9 /* AppDelegate.h */,
+				24D275C9237C2039001FB9E9 /* AppDelegate.m */,
+				24D275CB237C2039001FB9E9 /* SceneDelegate.h */,
+				24D275CC237C2039001FB9E9 /* SceneDelegate.m */,
+				24D275CE237C2039001FB9E9 /* ViewController.h */,
+				24D275CF237C2039001FB9E9 /* ViewController.m */,
+				24D275D1237C2039001FB9E9 /* Main.storyboard */,
+				24D275D4237C203A001FB9E9 /* Assets.xcassets */,
+				24D275D6237C203A001FB9E9 /* LaunchScreen.storyboard */,
+				24D275D9237C203A001FB9E9 /* Info.plist */,
+				24D275DA237C203A001FB9E9 /* main.m */,
+			);
+			path = "OpenCVSecondChapter-Laplace";
+			sourceTree = "<group>";
+		};
+		24D275E3237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				24D275E4237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceTests.m */,
+				24D275E6237C203B001FB9E9 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-LaplaceTests";
+			sourceTree = "<group>";
+		};
+		24D275EE237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24D275EF237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceUITests.m */,
+				24D275F1237C203B001FB9E9 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-LaplaceUITests";
+			sourceTree = "<group>";
+		};
+		24D275FD237C20A1001FB9E9 /* laplace算子 */ = {
+			isa = PBXGroup;
+			children = (
+				24D275FE237C20C1001FB9E9 /* LaplaceViewController.h */,
+				24D275FF237C20C1001FB9E9 /* LaplaceViewController.mm */,
+			);
+			path = "laplace算子";
+			sourceTree = "<group>";
+		};
+		DF678D1214A13464A0A9AE59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				433EBFBF44F2EAF8E29158C8 /* Pods-OpenCVSecondChapter-Laplace.debug.xcconfig */,
+				BA171CB62633AE24AD3995F5 /* Pods-OpenCVSecondChapter-Laplace.release.xcconfig */,
+				D42F49E2D2B223A13BC93EC0 /* Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.debug.xcconfig */,
+				FC079D88BEEE3DF7BB9922DB /* Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.release.xcconfig */,
+				EBC2636C08C2D71B8A6225E8 /* Pods-OpenCVSecondChapter-LaplaceTests.debug.xcconfig */,
+				906C5EA3885417E59F625D86 /* Pods-OpenCVSecondChapter-LaplaceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD0FFBA52E1F951A1AD39B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B3DEEAFFCC6FAC136D64103 /* libPods-OpenCVSecondChapter-Laplace.a */,
+				788C291F62F8100CA9889FE3 /* libPods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.a */,
+				F614A15E05BD17A7DD06A234 /* libPods-OpenCVSecondChapter-LaplaceTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24D275C4237C2039001FB9E9 /* OpenCVSecondChapter-Laplace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D275F4237C203B001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-Laplace" */;
+			buildPhases = (
+				E662B6A79B78FC7C2A30D6EC /* [CP] Check Pods Manifest.lock */,
+				24D275C1237C2039001FB9E9 /* Sources */,
+				24D275C2237C2039001FB9E9 /* Frameworks */,
+				24D275C3237C2039001FB9E9 /* Resources */,
+				15A3ECAFD05EC582D60B0D48 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVSecondChapter-Laplace";
+			productName = "OpenCVSecondChapter-Laplace";
+			productReference = 24D275C5237C2039001FB9E9 /* OpenCVSecondChapter-Laplace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24D275DF237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D275F7237C203B001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-LaplaceTests" */;
+			buildPhases = (
+				42F4F1B73464964A4C093415 /* [CP] Check Pods Manifest.lock */,
+				24D275DC237C203B001FB9E9 /* Sources */,
+				24D275DD237C203B001FB9E9 /* Frameworks */,
+				24D275DE237C203B001FB9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D275E2237C203B001FB9E9 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-LaplaceTests";
+			productName = "OpenCVSecondChapter-LaplaceTests";
+			productReference = 24D275E0237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24D275EA237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D275FA237C203B001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-LaplaceUITests" */;
+			buildPhases = (
+				D60232FF60FECF4EB44EC07D /* [CP] Check Pods Manifest.lock */,
+				24D275E7237C203B001FB9E9 /* Sources */,
+				24D275E8237C203B001FB9E9 /* Frameworks */,
+				24D275E9237C203B001FB9E9 /* Resources */,
+				6E3C9B94226D37DA1CA7670F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D275ED237C203B001FB9E9 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-LaplaceUITests";
+			productName = "OpenCVSecondChapter-LaplaceUITests";
+			productReference = 24D275EB237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D275BD237C2039001FB9E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					24D275C4237C2039001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					24D275DF237C203B001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24D275C4237C2039001FB9E9;
+					};
+					24D275EA237C203B001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24D275C4237C2039001FB9E9;
+					};
+				};
+			};
+			buildConfigurationList = 24D275C0237C2039001FB9E9 /* Build configuration list for PBXProject "OpenCVSecondChapter-Laplace" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24D275BC237C2039001FB9E9;
+			productRefGroup = 24D275C6237C2039001FB9E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D275C4237C2039001FB9E9 /* OpenCVSecondChapter-Laplace */,
+				24D275DF237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceTests */,
+				24D275EA237C203B001FB9E9 /* OpenCVSecondChapter-LaplaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24D275C3237C2039001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D275D8237C203A001FB9E9 /* LaunchScreen.storyboard in Resources */,
+				24D275D5237C203A001FB9E9 /* Assets.xcassets in Resources */,
+				24D275D3237C2039001FB9E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275DE237C203B001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275E9237C203B001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A3ECAFD05EC582D60B0D48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Laplace/Pods-OpenCVSecondChapter-Laplace-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Laplace/Pods-OpenCVSecondChapter-Laplace-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Laplace/Pods-OpenCVSecondChapter-Laplace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42F4F1B73464964A4C093415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-LaplaceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E3C9B94226D37DA1CA7670F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60232FF60FECF4EB44EC07D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E662B6A79B78FC7C2A30D6EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-Laplace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D275C1237C2039001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D275D0237C2039001FB9E9 /* ViewController.m in Sources */,
+				24D275CA237C2039001FB9E9 /* AppDelegate.m in Sources */,
+				24D275DB237C203A001FB9E9 /* main.m in Sources */,
+				24D275CD237C2039001FB9E9 /* SceneDelegate.m in Sources */,
+				24D27600237C20C1001FB9E9 /* LaplaceViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275DC237C203B001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D275E5237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275E7237C203B001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D275F0237C203B001FB9E9 /* OpenCVSecondChapter_LaplaceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D275E2237C203B001FB9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D275C4237C2039001FB9E9 /* OpenCVSecondChapter-Laplace */;
+			targetProxy = 24D275E1237C203B001FB9E9 /* PBXContainerItemProxy */;
+		};
+		24D275ED237C203B001FB9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D275C4237C2039001FB9E9 /* OpenCVSecondChapter-Laplace */;
+			targetProxy = 24D275EC237C203B001FB9E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24D275D1237C2039001FB9E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D275D2237C2039001FB9E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24D275D6237C203A001FB9E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D275D7237C203A001FB9E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24D275F2237C203B001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24D275F3237C203B001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D275F5237C203B001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433EBFBF44F2EAF8E29158C8 /* Pods-OpenCVSecondChapter-Laplace.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-Laplace/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-Laplace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24D275F6237C203B001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA171CB62633AE24AD3995F5 /* Pods-OpenCVSecondChapter-Laplace.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-Laplace/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-Laplace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24D275F8237C203B001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBC2636C08C2D71B8A6225E8 /* Pods-OpenCVSecondChapter-LaplaceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-LaplaceTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-LaplaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-Laplace.app/OpenCVSecondChapter-Laplace";
+			};
+			name = Debug;
+		};
+		24D275F9237C203B001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 906C5EA3885417E59F625D86 /* Pods-OpenCVSecondChapter-LaplaceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-LaplaceTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-LaplaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-Laplace.app/OpenCVSecondChapter-Laplace";
+			};
+			name = Release;
+		};
+		24D275FB237C203B001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D42F49E2D2B223A13BC93EC0 /* Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-LaplaceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-LaplaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-Laplace";
+			};
+			name = Debug;
+		};
+		24D275FC237C203B001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC079D88BEEE3DF7BB9922DB /* Pods-OpenCVSecondChapter-Laplace-OpenCVSecondChapter-LaplaceUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-LaplaceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-LaplaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-Laplace";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D275C0237C2039001FB9E9 /* Build configuration list for PBXProject "OpenCVSecondChapter-Laplace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275F2237C203B001FB9E9 /* Debug */,
+				24D275F3237C203B001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D275F4237C203B001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-Laplace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275F5237C203B001FB9E9 /* Debug */,
+				24D275F6237C203B001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D275F7237C203B001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-LaplaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275F8237C203B001FB9E9 /* Debug */,
+				24D275F9237C203B001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D275FA237C203B001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-LaplaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275FB237C203B001FB9E9 /* Debug */,
+				24D275FC237C203B001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24D275BD237C2039001FB9E9 /* Project object */;
+}
