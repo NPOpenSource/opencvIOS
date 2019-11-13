@@ -40,5 +40,9 @@ Opencv 中文网学习
 
 [OpenCV 之ios 实现自己的线性滤波器](/OpenCVSecondChapter-filter)
 
+[OpenCV 之ios 给图像添加边界](/OpenCVSecondChapter-copyMakeBorder)
+
+# 
+
 
 
