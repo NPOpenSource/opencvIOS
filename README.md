@@ -38,5 +38,7 @@ Opencv 中文网学习
 
 [OpenCV 之ios 基本的阈值操作](/OpenCVSecondChapter-threshold)
 
+[OpenCV 之ios 实现自己的线性滤波器](/OpenCVSecondChapter-filter)
+
 
 
