@@ -101,8 +101,9 @@ static int sliderExeBlockKey;
     int m = button.hitCount.intValue;
     button.hitCount=@(++m);
     NSString * title =   button.exeBlock(m);
-    [button setTitle:title forState:UIControlStateNormal];
-
+    if (title.length>0) {
+          [button setTitle:title forState:UIControlStateNormal];
+    }
 }
 
 

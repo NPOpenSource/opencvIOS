@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D2746D237BD860001FB9E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2746C237BD860001FB9E9 /* AppDelegate.m */; };
+		24D27470237BD860001FB9E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2746F237BD860001FB9E9 /* SceneDelegate.m */; };
+		24D27473237BD860001FB9E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27472237BD860001FB9E9 /* ViewController.m */; };
+		24D27476237BD860001FB9E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D27474237BD860001FB9E9 /* Main.storyboard */; };
+		24D27478237BD862001FB9E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D27477237BD862001FB9E9 /* Assets.xcassets */; };
+		24D2747B237BD862001FB9E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D27479237BD862001FB9E9 /* LaunchScreen.storyboard */; };
+		24D2747E237BD862001FB9E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2747D237BD862001FB9E9 /* main.m */; };
+		24D27488237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27487237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsTests.m */; };
+		24D27493237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27492237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsUITests.m */; };
+		24D274A3237BD8C5001FB9E9 /* PyramidsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24D274A2237BD8C5001FB9E9 /* PyramidsViewController.mm */; };
+		386AE89E25DD74B12B85DEC8 /* libPods-OpenCVSecondChapter-pyramidsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2920D0D19220C9ECA399D864 /* libPods-OpenCVSecondChapter-pyramidsTests.a */; };
+		7230614BC1B16C8F2AB70429 /* libPods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F55FC6801480617F85E4C9 /* libPods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.a */; };
+		E7877F481871C14A8587894B /* libPods-OpenCVSecondChapter-pyramids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB45436EFB5E416395E6DD75 /* libPods-OpenCVSecondChapter-pyramids.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24D27484237BD862001FB9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D27460237BD860001FB9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D27467237BD860001FB9E9;
+			remoteInfo = "OpenCVSecondChapter-pyramids";
+		};
+		24D2748F237BD862001FB9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D27460237BD860001FB9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D27467237BD860001FB9E9;
+			remoteInfo = "OpenCVSecondChapter-pyramids";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21F55FC6801480617F85E4C9 /* libPods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		234B1C2568137B5F540DC4D0 /* Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24D27468237BD860001FB9E9 /* OpenCVSecondChapter-pyramids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVSecondChapter-pyramids.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D2746B237BD860001FB9E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24D2746C237BD860001FB9E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24D2746E237BD860001FB9E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24D2746F237BD860001FB9E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24D27471237BD860001FB9E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24D27472237BD860001FB9E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24D27475237BD860001FB9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24D27477237BD862001FB9E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24D2747A237BD862001FB9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24D2747C237BD862001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D2747D237BD862001FB9E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24D27483237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-pyramidsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D27487237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_pyramidsTests.m; sourceTree = "<group>"; };
+		24D27489237BD862001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D2748E237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-pyramidsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D27492237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_pyramidsUITests.m; sourceTree = "<group>"; };
+		24D27494237BD862001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D274A1237BD8C5001FB9E9 /* PyramidsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyramidsViewController.h; sourceTree = "<group>"; };
+		24D274A2237BD8C5001FB9E9 /* PyramidsViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PyramidsViewController.mm; sourceTree = "<group>"; };
+		2920D0D19220C9ECA399D864 /* libPods-OpenCVSecondChapter-pyramidsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-pyramidsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBCCF0A153F70AE29B2F1CD /* Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9E12172FD7B4569E7B0620A1 /* Pods-OpenCVSecondChapter-pyramidsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-pyramidsTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-pyramidsTests/Pods-OpenCVSecondChapter-pyramidsTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB45436EFB5E416395E6DD75 /* libPods-OpenCVSecondChapter-pyramids.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-pyramids.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE590DD9FB2E8723506422B /* Pods-OpenCVSecondChapter-pyramidsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-pyramidsTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-pyramidsTests/Pods-OpenCVSecondChapter-pyramidsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFAEAA5470907CD9C557D526 /* Pods-OpenCVSecondChapter-pyramids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-pyramids.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-pyramids/Pods-OpenCVSecondChapter-pyramids.debug.xcconfig"; sourceTree = "<group>"; };
+		F7D2DDEFC1F9DD036152FDD2 /* Pods-OpenCVSecondChapter-pyramids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-pyramids.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-pyramids/Pods-OpenCVSecondChapter-pyramids.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D27465237BD860001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7877F481871C14A8587894B /* libPods-OpenCVSecondChapter-pyramids.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D27480237BD862001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				386AE89E25DD74B12B85DEC8 /* libPods-OpenCVSecondChapter-pyramidsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D2748B237BD862001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7230614BC1B16C8F2AB70429 /* libPods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D2745F237BD860001FB9E9 = {
+			isa = PBXGroup;
+			children = (
+				24D2746A237BD860001FB9E9 /* OpenCVSecondChapter-pyramids */,
+				24D27486237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsTests */,
+				24D27491237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsUITests */,
+				24D27469237BD860001FB9E9 /* Products */,
+				4AC9EAA38C3B54CEB4F0043E /* Pods */,
+				E693CEE47D6062BFDEBAC6D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24D27469237BD860001FB9E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D27468237BD860001FB9E9 /* OpenCVSecondChapter-pyramids.app */,
+				24D27483237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsTests.xctest */,
+				24D2748E237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D2746A237BD860001FB9E9 /* OpenCVSecondChapter-pyramids */ = {
+			isa = PBXGroup;
+			children = (
+				24D274A0237BD8B1001FB9E9 /* 图像金字塔 */,
+				24D2746B237BD860001FB9E9 /* AppDelegate.h */,
+				24D2746C237BD860001FB9E9 /* AppDelegate.m */,
+				24D2746E237BD860001FB9E9 /* SceneDelegate.h */,
+				24D2746F237BD860001FB9E9 /* SceneDelegate.m */,
+				24D27471237BD860001FB9E9 /* ViewController.h */,
+				24D27472237BD860001FB9E9 /* ViewController.m */,
+				24D27474237BD860001FB9E9 /* Main.storyboard */,
+				24D27477237BD862001FB9E9 /* Assets.xcassets */,
+				24D27479237BD862001FB9E9 /* LaunchScreen.storyboard */,
+				24D2747C237BD862001FB9E9 /* Info.plist */,
+				24D2747D237BD862001FB9E9 /* main.m */,
+			);
+			path = "OpenCVSecondChapter-pyramids";
+			sourceTree = "<group>";
+		};
+		24D27486237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsTests */ = {
+			isa = PBXGroup;
+			children = (
+				24D27487237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsTests.m */,
+				24D27489237BD862001FB9E9 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-pyramidsTests";
+			sourceTree = "<group>";
+		};
+		24D27491237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24D27492237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsUITests.m */,
+				24D27494237BD862001FB9E9 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-pyramidsUITests";
+			sourceTree = "<group>";
+		};
+		24D274A0237BD8B1001FB9E9 /* 图像金字塔 */ = {
+			isa = PBXGroup;
+			children = (
+				24D274A1237BD8C5001FB9E9 /* PyramidsViewController.h */,
+				24D274A2237BD8C5001FB9E9 /* PyramidsViewController.mm */,
+			);
+			path = "图像金字塔";
+			sourceTree = "<group>";
+		};
+		4AC9EAA38C3B54CEB4F0043E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFAEAA5470907CD9C557D526 /* Pods-OpenCVSecondChapter-pyramids.debug.xcconfig */,
+				F7D2DDEFC1F9DD036152FDD2 /* Pods-OpenCVSecondChapter-pyramids.release.xcconfig */,
+				234B1C2568137B5F540DC4D0 /* Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.debug.xcconfig */,
+				3FBCCF0A153F70AE29B2F1CD /* Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.release.xcconfig */,
+				ADE590DD9FB2E8723506422B /* Pods-OpenCVSecondChapter-pyramidsTests.debug.xcconfig */,
+				9E12172FD7B4569E7B0620A1 /* Pods-OpenCVSecondChapter-pyramidsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E693CEE47D6062BFDEBAC6D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB45436EFB5E416395E6DD75 /* libPods-OpenCVSecondChapter-pyramids.a */,
+				21F55FC6801480617F85E4C9 /* libPods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.a */,
+				2920D0D19220C9ECA399D864 /* libPods-OpenCVSecondChapter-pyramidsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24D27467237BD860001FB9E9 /* OpenCVSecondChapter-pyramids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D27497237BD862001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-pyramids" */;
+			buildPhases = (
+				C35F15BA82AF4694F773F84B /* [CP] Check Pods Manifest.lock */,
+				24D27464237BD860001FB9E9 /* Sources */,
+				24D27465237BD860001FB9E9 /* Frameworks */,
+				24D27466237BD860001FB9E9 /* Resources */,
+				3A2FE57A3D1721BA8E4563EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVSecondChapter-pyramids";
+			productName = "OpenCVSecondChapter-pyramids";
+			productReference = 24D27468237BD860001FB9E9 /* OpenCVSecondChapter-pyramids.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24D27482237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D2749A237BD862001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-pyramidsTests" */;
+			buildPhases = (
+				C9993AACF724ADC16F2A1F94 /* [CP] Check Pods Manifest.lock */,
+				24D2747F237BD862001FB9E9 /* Sources */,
+				24D27480237BD862001FB9E9 /* Frameworks */,
+				24D27481237BD862001FB9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D27485237BD862001FB9E9 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-pyramidsTests";
+			productName = "OpenCVSecondChapter-pyramidsTests";
+			productReference = 24D27483237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24D2748D237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D2749D237BD862001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-pyramidsUITests" */;
+			buildPhases = (
+				376F1F97E37C4848A2E0EC2A /* [CP] Check Pods Manifest.lock */,
+				24D2748A237BD862001FB9E9 /* Sources */,
+				24D2748B237BD862001FB9E9 /* Frameworks */,
+				24D2748C237BD862001FB9E9 /* Resources */,
+				9DC4493EB1C224628C76260C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D27490237BD862001FB9E9 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-pyramidsUITests";
+			productName = "OpenCVSecondChapter-pyramidsUITests";
+			productReference = 24D2748E237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D27460237BD860001FB9E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					24D27467237BD860001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					24D27482237BD862001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24D27467237BD860001FB9E9;
+					};
+					24D2748D237BD862001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24D27467237BD860001FB9E9;
+					};
+				};
+			};
+			buildConfigurationList = 24D27463237BD860001FB9E9 /* Build configuration list for PBXProject "OpenCVSecondChapter-pyramids" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24D2745F237BD860001FB9E9;
+			productRefGroup = 24D27469237BD860001FB9E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D27467237BD860001FB9E9 /* OpenCVSecondChapter-pyramids */,
+				24D27482237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsTests */,
+				24D2748D237BD862001FB9E9 /* OpenCVSecondChapter-pyramidsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24D27466237BD860001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D2747B237BD862001FB9E9 /* LaunchScreen.storyboard in Resources */,
+				24D27478237BD862001FB9E9 /* Assets.xcassets in Resources */,
+				24D27476237BD860001FB9E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D27481237BD862001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D2748C237BD862001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		376F1F97E37C4848A2E0EC2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A2FE57A3D1721BA8E4563EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-pyramids/Pods-OpenCVSecondChapter-pyramids-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-pyramids/Pods-OpenCVSecondChapter-pyramids-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-pyramids/Pods-OpenCVSecondChapter-pyramids-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC4493EB1C224628C76260C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests/Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C35F15BA82AF4694F773F84B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-pyramids-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9993AACF724ADC16F2A1F94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-pyramidsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D27464237BD860001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D27473237BD860001FB9E9 /* ViewController.m in Sources */,
+				24D274A3237BD8C5001FB9E9 /* PyramidsViewController.mm in Sources */,
+				24D2746D237BD860001FB9E9 /* AppDelegate.m in Sources */,
+				24D2747E237BD862001FB9E9 /* main.m in Sources */,
+				24D27470237BD860001FB9E9 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D2747F237BD862001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D27488237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D2748A237BD862001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D27493237BD862001FB9E9 /* OpenCVSecondChapter_pyramidsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D27485237BD862001FB9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D27467237BD860001FB9E9 /* OpenCVSecondChapter-pyramids */;
+			targetProxy = 24D27484237BD862001FB9E9 /* PBXContainerItemProxy */;
+		};
+		24D27490237BD862001FB9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D27467237BD860001FB9E9 /* OpenCVSecondChapter-pyramids */;
+			targetProxy = 24D2748F237BD862001FB9E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24D27474237BD860001FB9E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D27475237BD860001FB9E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24D27479237BD862001FB9E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D2747A237BD862001FB9E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24D27495237BD862001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24D27496237BD862001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D27498237BD862001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFAEAA5470907CD9C557D526 /* Pods-OpenCVSecondChapter-pyramids.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-pyramids/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-pyramids";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24D27499237BD862001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D2DDEFC1F9DD036152FDD2 /* Pods-OpenCVSecondChapter-pyramids.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-pyramids/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-pyramids";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24D2749B237BD862001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE590DD9FB2E8723506422B /* Pods-OpenCVSecondChapter-pyramidsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-pyramidsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-pyramidsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-pyramids.app/OpenCVSecondChapter-pyramids";
+			};
+			name = Debug;
+		};
+		24D2749C237BD862001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E12172FD7B4569E7B0620A1 /* Pods-OpenCVSecondChapter-pyramidsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-pyramidsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-pyramidsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-pyramids.app/OpenCVSecondChapter-pyramids";
+			};
+			name = Release;
+		};
+		24D2749E237BD862001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234B1C2568137B5F540DC4D0 /* Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-pyramidsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-pyramidsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-pyramids";
+			};
+			name = Debug;
+		};
+		24D2749F237BD862001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FBCCF0A153F70AE29B2F1CD /* Pods-OpenCVSecondChapter-pyramids-OpenCVSecondChapter-pyramidsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-pyramidsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-pyramidsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-pyramids";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D27463237BD860001FB9E9 /* Build configuration list for PBXProject "OpenCVSecondChapter-pyramids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D27495237BD862001FB9E9 /* Debug */,
+				24D27496237BD862001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D27497237BD862001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-pyramids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D27498237BD862001FB9E9 /* Debug */,
+				24D27499237BD862001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D2749A237BD862001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-pyramidsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D2749B237BD862001FB9E9 /* Debug */,
+				24D2749C237BD862001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D2749D237BD862001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-pyramidsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D2749E237BD862001FB9E9 /* Debug */,
+				24D2749F237BD862001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24D27460237BD860001FB9E9 /* Project object */;
+}
