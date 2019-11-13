@@ -77,6 +77,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios Laplace 算子](OpenCVSecondChapter-Laplace)
 
+[OpenCV 之ios Canny 边缘检测](OpenCVSecondChapter-Canny)
+
 # 
 
 
