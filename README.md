@@ -32,5 +32,9 @@ Opencv 中文网学习
 
 [OpenCV 之ios 腐蚀与膨胀](/OpenCVSecondChapter-erodeAndDilate)
 
+[OpenCV 之ios 更多形态学变换](OpenCVSecondChapter-moreState)
+
+
+
 
 
