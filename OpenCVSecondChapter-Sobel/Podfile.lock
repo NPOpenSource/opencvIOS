@@ -1,0 +1,35 @@
+PODS:
+  - OpenCV (3.4.6)
+  - OpenCVBase (0.0.1):
+    - OpenCV (= 3.4.6)
+    - OpenCVUtils (~> 0.0.1)
+  - OpenCVSource (0.0.1)
+  - OpenCVUtils (0.0.1):
+    - OpenCV (= 3.4.6)
+
+DEPENDENCIES:
+  - OpenCVBase (from `../OpenCVBase`)
+  - OpenCVSource (from `../OpenCVSource`)
+  - OpenCVUtils (from `../OpenCVUtils`)
+
+SPEC REPOS:
+  trunk:
+    - OpenCV
+
+EXTERNAL SOURCES:
+  OpenCVBase:
+    :path: "../OpenCVBase"
+  OpenCVSource:
+    :path: "../OpenCVSource"
+  OpenCVUtils:
+    :path: "../OpenCVUtils"
+
+SPEC CHECKSUMS:
+  OpenCV: 1df7b8ab75900ef4365905b989bf60f5ca4101aa
+  OpenCVBase: 10bffb52e474776c41658832d699afae0ae40dde
+  OpenCVSource: 87d2a1bdd24a145f3fbac0e02a950555e6770109
+  OpenCVUtils: bf7f554ea963c584082a67ed148e867f87876680
+
+PODFILE CHECKSUM: 953c294f3ec523b27793830cbf1f0b62eebd2239
+
+COCOAPODS: 1.8.1

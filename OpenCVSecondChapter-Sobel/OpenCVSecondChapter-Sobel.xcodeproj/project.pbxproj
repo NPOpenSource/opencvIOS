@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D27585237C12E7001FB9E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27584237C12E7001FB9E9 /* AppDelegate.m */; };
+		24D27588237C12E7001FB9E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27587237C12E7001FB9E9 /* SceneDelegate.m */; };
+		24D2758B237C12E7001FB9E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2758A237C12E7001FB9E9 /* ViewController.m */; };
+		24D2758E237C12E7001FB9E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D2758C237C12E7001FB9E9 /* Main.storyboard */; };
+		24D27590237C12E8001FB9E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D2758F237C12E8001FB9E9 /* Assets.xcassets */; };
+		24D27593237C12E8001FB9E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D27591237C12E8001FB9E9 /* LaunchScreen.storyboard */; };
+		24D27596237C12E8001FB9E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27595237C12E8001FB9E9 /* main.m */; };
+		24D275A0237C12E8001FB9E9 /* OpenCVSecondChapter_SobelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2759F237C12E8001FB9E9 /* OpenCVSecondChapter_SobelTests.m */; };
+		24D275AB237C12E8001FB9E9 /* OpenCVSecondChapter_SobelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D275AA237C12E8001FB9E9 /* OpenCVSecondChapter_SobelUITests.m */; };
+		24D275BB237C13D8001FB9E9 /* SobelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24D275BA237C13D8001FB9E9 /* SobelViewController.mm */; };
+		299343F8CCFA940D4DF6382C /* libPods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5E4C9094972324B1EB34FA /* libPods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.a */; };
+		6B49E09C56610B72591B7D4D /* libPods-OpenCVSecondChapter-SobelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6123FF701C4B170F5B7F92 /* libPods-OpenCVSecondChapter-SobelTests.a */; };
+		EFEEC5D91FEBB9566A575539 /* libPods-OpenCVSecondChapter-Sobel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E30E7C8F8EAAFA65FB8FD26 /* libPods-OpenCVSecondChapter-Sobel.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24D2759C237C12E8001FB9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D27578237C12E7001FB9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D2757F237C12E7001FB9E9;
+			remoteInfo = "OpenCVSecondChapter-Sobel";
+		};
+		24D275A7237C12E8001FB9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D27578237C12E7001FB9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D2757F237C12E7001FB9E9;
+			remoteInfo = "OpenCVSecondChapter-Sobel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B5E4C9094972324B1EB34FA /* libPods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D27580237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVSecondChapter-Sobel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D27583237C12E7001FB9E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24D27584237C12E7001FB9E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24D27586237C12E7001FB9E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24D27587237C12E7001FB9E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24D27589237C12E7001FB9E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24D2758A237C12E7001FB9E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24D2758D237C12E7001FB9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24D2758F237C12E8001FB9E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24D27592237C12E8001FB9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24D27594237C12E8001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D27595237C12E8001FB9E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24D2759B237C12E8001FB9E9 /* OpenCVSecondChapter-SobelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-SobelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D2759F237C12E8001FB9E9 /* OpenCVSecondChapter_SobelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_SobelTests.m; sourceTree = "<group>"; };
+		24D275A1237C12E8001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D275A6237C12E8001FB9E9 /* OpenCVSecondChapter-SobelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-SobelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D275AA237C12E8001FB9E9 /* OpenCVSecondChapter_SobelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_SobelUITests.m; sourceTree = "<group>"; };
+		24D275AC237C12E8001FB9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D275B9237C13D8001FB9E9 /* SobelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SobelViewController.h; sourceTree = "<group>"; };
+		24D275BA237C13D8001FB9E9 /* SobelViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SobelViewController.mm; sourceTree = "<group>"; };
+		34D907D0EC53C7B52358E495 /* Pods-OpenCVSecondChapter-SobelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-SobelTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-SobelTests/Pods-OpenCVSecondChapter-SobelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B268BFA94D12DDBDDFB84D4 /* Pods-OpenCVSecondChapter-SobelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-SobelTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-SobelTests/Pods-OpenCVSecondChapter-SobelTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E30E7C8F8EAAFA65FB8FD26 /* libPods-OpenCVSecondChapter-Sobel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-Sobel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC047EE1271E00E0F21F727 /* Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F8DA7E720A2D7E1BB5BFEF0 /* Pods-OpenCVSecondChapter-Sobel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Sobel.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Sobel/Pods-OpenCVSecondChapter-Sobel.debug.xcconfig"; sourceTree = "<group>"; };
+		6B6123FF701C4B170F5B7F92 /* libPods-OpenCVSecondChapter-SobelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-SobelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0E8DBA9E7C48E3A8F9D3E2 /* Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8331712AA06CBDDD0DC2FF66 /* Pods-OpenCVSecondChapter-Sobel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-Sobel.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-Sobel/Pods-OpenCVSecondChapter-Sobel.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D2757D237C12E7001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEEC5D91FEBB9566A575539 /* libPods-OpenCVSecondChapter-Sobel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D27598237C12E8001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B49E09C56610B72591B7D4D /* libPods-OpenCVSecondChapter-SobelTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275A3237C12E8001FB9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299343F8CCFA940D4DF6382C /* libPods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D27577237C12E7001FB9E9 = {
+			isa = PBXGroup;
+			children = (
+				24D27582237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel */,
+				24D2759E237C12E8001FB9E9 /* OpenCVSecondChapter-SobelTests */,
+				24D275A9237C12E8001FB9E9 /* OpenCVSecondChapter-SobelUITests */,
+				24D27581237C12E7001FB9E9 /* Products */,
+				6AD72107E6D2414CBC97D75E /* Pods */,
+				6BB354611A17BE27895DD75B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24D27581237C12E7001FB9E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D27580237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel.app */,
+				24D2759B237C12E8001FB9E9 /* OpenCVSecondChapter-SobelTests.xctest */,
+				24D275A6237C12E8001FB9E9 /* OpenCVSecondChapter-SobelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D27582237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel */ = {
+			isa = PBXGroup;
+			children = (
+				24D275B8237C1361001FB9E9 /* Sobel导数 */,
+				24D27583237C12E7001FB9E9 /* AppDelegate.h */,
+				24D27584237C12E7001FB9E9 /* AppDelegate.m */,
+				24D27586237C12E7001FB9E9 /* SceneDelegate.h */,
+				24D27587237C12E7001FB9E9 /* SceneDelegate.m */,
+				24D27589237C12E7001FB9E9 /* ViewController.h */,
+				24D2758A237C12E7001FB9E9 /* ViewController.m */,
+				24D2758C237C12E7001FB9E9 /* Main.storyboard */,
+				24D2758F237C12E8001FB9E9 /* Assets.xcassets */,
+				24D27591237C12E8001FB9E9 /* LaunchScreen.storyboard */,
+				24D27594237C12E8001FB9E9 /* Info.plist */,
+				24D27595237C12E8001FB9E9 /* main.m */,
+			);
+			path = "OpenCVSecondChapter-Sobel";
+			sourceTree = "<group>";
+		};
+		24D2759E237C12E8001FB9E9 /* OpenCVSecondChapter-SobelTests */ = {
+			isa = PBXGroup;
+			children = (
+				24D2759F237C12E8001FB9E9 /* OpenCVSecondChapter_SobelTests.m */,
+				24D275A1237C12E8001FB9E9 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-SobelTests";
+			sourceTree = "<group>";
+		};
+		24D275A9237C12E8001FB9E9 /* OpenCVSecondChapter-SobelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24D275AA237C12E8001FB9E9 /* OpenCVSecondChapter_SobelUITests.m */,
+				24D275AC237C12E8001FB9E9 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-SobelUITests";
+			sourceTree = "<group>";
+		};
+		24D275B8237C1361001FB9E9 /* Sobel导数 */ = {
+			isa = PBXGroup;
+			children = (
+				24D275B9237C13D8001FB9E9 /* SobelViewController.h */,
+				24D275BA237C13D8001FB9E9 /* SobelViewController.mm */,
+			);
+			path = "Sobel导数";
+			sourceTree = "<group>";
+		};
+		6AD72107E6D2414CBC97D75E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F8DA7E720A2D7E1BB5BFEF0 /* Pods-OpenCVSecondChapter-Sobel.debug.xcconfig */,
+				8331712AA06CBDDD0DC2FF66 /* Pods-OpenCVSecondChapter-Sobel.release.xcconfig */,
+				7C0E8DBA9E7C48E3A8F9D3E2 /* Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.debug.xcconfig */,
+				4DC047EE1271E00E0F21F727 /* Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.release.xcconfig */,
+				34D907D0EC53C7B52358E495 /* Pods-OpenCVSecondChapter-SobelTests.debug.xcconfig */,
+				3B268BFA94D12DDBDDFB84D4 /* Pods-OpenCVSecondChapter-SobelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6BB354611A17BE27895DD75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E30E7C8F8EAAFA65FB8FD26 /* libPods-OpenCVSecondChapter-Sobel.a */,
+				1B5E4C9094972324B1EB34FA /* libPods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.a */,
+				6B6123FF701C4B170F5B7F92 /* libPods-OpenCVSecondChapter-SobelTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24D2757F237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D275AF237C12E8001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-Sobel" */;
+			buildPhases = (
+				2A33E5B8FE09988DF3FBB743 /* [CP] Check Pods Manifest.lock */,
+				24D2757C237C12E7001FB9E9 /* Sources */,
+				24D2757D237C12E7001FB9E9 /* Frameworks */,
+				24D2757E237C12E7001FB9E9 /* Resources */,
+				AD99BE921840BAC4FA43D117 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVSecondChapter-Sobel";
+			productName = "OpenCVSecondChapter-Sobel";
+			productReference = 24D27580237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24D2759A237C12E8001FB9E9 /* OpenCVSecondChapter-SobelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D275B2237C12E8001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-SobelTests" */;
+			buildPhases = (
+				7D282980D8181884AD540251 /* [CP] Check Pods Manifest.lock */,
+				24D27597237C12E8001FB9E9 /* Sources */,
+				24D27598237C12E8001FB9E9 /* Frameworks */,
+				24D27599237C12E8001FB9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D2759D237C12E8001FB9E9 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-SobelTests";
+			productName = "OpenCVSecondChapter-SobelTests";
+			productReference = 24D2759B237C12E8001FB9E9 /* OpenCVSecondChapter-SobelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24D275A5237C12E8001FB9E9 /* OpenCVSecondChapter-SobelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D275B5237C12E8001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-SobelUITests" */;
+			buildPhases = (
+				210A3ABD465B575F458CFD8E /* [CP] Check Pods Manifest.lock */,
+				24D275A2237C12E8001FB9E9 /* Sources */,
+				24D275A3237C12E8001FB9E9 /* Frameworks */,
+				24D275A4237C12E8001FB9E9 /* Resources */,
+				D655EC8EBA9732B41F2AC894 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D275A8237C12E8001FB9E9 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-SobelUITests";
+			productName = "OpenCVSecondChapter-SobelUITests";
+			productReference = 24D275A6237C12E8001FB9E9 /* OpenCVSecondChapter-SobelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D27578237C12E7001FB9E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					24D2757F237C12E7001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					24D2759A237C12E8001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24D2757F237C12E7001FB9E9;
+					};
+					24D275A5237C12E8001FB9E9 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24D2757F237C12E7001FB9E9;
+					};
+				};
+			};
+			buildConfigurationList = 24D2757B237C12E7001FB9E9 /* Build configuration list for PBXProject "OpenCVSecondChapter-Sobel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24D27577237C12E7001FB9E9;
+			productRefGroup = 24D27581237C12E7001FB9E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D2757F237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel */,
+				24D2759A237C12E8001FB9E9 /* OpenCVSecondChapter-SobelTests */,
+				24D275A5237C12E8001FB9E9 /* OpenCVSecondChapter-SobelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24D2757E237C12E7001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D27593237C12E8001FB9E9 /* LaunchScreen.storyboard in Resources */,
+				24D27590237C12E8001FB9E9 /* Assets.xcassets in Resources */,
+				24D2758E237C12E7001FB9E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D27599237C12E8001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275A4237C12E8001FB9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210A3ABD465B575F458CFD8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A33E5B8FE09988DF3FBB743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-Sobel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D282980D8181884AD540251 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-SobelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD99BE921840BAC4FA43D117 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Sobel/Pods-OpenCVSecondChapter-Sobel-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Sobel/Pods-OpenCVSecondChapter-Sobel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Sobel/Pods-OpenCVSecondChapter-Sobel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D655EC8EBA9732B41F2AC894 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests/Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D2757C237C12E7001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D2758B237C12E7001FB9E9 /* ViewController.m in Sources */,
+				24D27585237C12E7001FB9E9 /* AppDelegate.m in Sources */,
+				24D275BB237C13D8001FB9E9 /* SobelViewController.mm in Sources */,
+				24D27596237C12E8001FB9E9 /* main.m in Sources */,
+				24D27588237C12E7001FB9E9 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D27597237C12E8001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D275A0237C12E8001FB9E9 /* OpenCVSecondChapter_SobelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D275A2237C12E8001FB9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D275AB237C12E8001FB9E9 /* OpenCVSecondChapter_SobelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D2759D237C12E8001FB9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D2757F237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel */;
+			targetProxy = 24D2759C237C12E8001FB9E9 /* PBXContainerItemProxy */;
+		};
+		24D275A8237C12E8001FB9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D2757F237C12E7001FB9E9 /* OpenCVSecondChapter-Sobel */;
+			targetProxy = 24D275A7237C12E8001FB9E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24D2758C237C12E7001FB9E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D2758D237C12E7001FB9E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24D27591237C12E8001FB9E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D27592237C12E8001FB9E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24D275AD237C12E8001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24D275AE237C12E8001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D275B0237C12E8001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8DA7E720A2D7E1BB5BFEF0 /* Pods-OpenCVSecondChapter-Sobel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-Sobel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-Sobel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24D275B1237C12E8001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8331712AA06CBDDD0DC2FF66 /* Pods-OpenCVSecondChapter-Sobel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-Sobel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-Sobel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24D275B3237C12E8001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D907D0EC53C7B52358E495 /* Pods-OpenCVSecondChapter-SobelTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-SobelTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-SobelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-Sobel.app/OpenCVSecondChapter-Sobel";
+			};
+			name = Debug;
+		};
+		24D275B4237C12E8001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B268BFA94D12DDBDDFB84D4 /* Pods-OpenCVSecondChapter-SobelTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-SobelTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-SobelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-Sobel.app/OpenCVSecondChapter-Sobel";
+			};
+			name = Release;
+		};
+		24D275B6237C12E8001FB9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0E8DBA9E7C48E3A8F9D3E2 /* Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-SobelUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-SobelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-Sobel";
+			};
+			name = Debug;
+		};
+		24D275B7237C12E8001FB9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC047EE1271E00E0F21F727 /* Pods-OpenCVSecondChapter-Sobel-OpenCVSecondChapter-SobelUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-SobelUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-SobelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-Sobel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D2757B237C12E7001FB9E9 /* Build configuration list for PBXProject "OpenCVSecondChapter-Sobel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275AD237C12E8001FB9E9 /* Debug */,
+				24D275AE237C12E8001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D275AF237C12E8001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-Sobel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275B0237C12E8001FB9E9 /* Debug */,
+				24D275B1237C12E8001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D275B2237C12E8001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-SobelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275B3237C12E8001FB9E9 /* Debug */,
+				24D275B4237C12E8001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D275B5237C12E8001FB9E9 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-SobelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D275B6237C12E8001FB9E9 /* Debug */,
+				24D275B7237C12E8001FB9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24D27578237C12E7001FB9E9 /* Project object */;
+}

@@ -42,6 +42,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 给图像添加边界](/OpenCVSecondChapter-copyMakeBorder)
 
+[OpenCV 之ios  Sobel 导数](OpenCVSecondChapter-Sobel)
+
 # 
 
 
