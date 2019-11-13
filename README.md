@@ -36,5 +36,7 @@ Opencv 中文网学习
 
 [OpenCV 之ios 图像金字塔](/OpenCVSecondChapter-pyramids)
 
+[OpenCV 之ios 基本的阈值操作](/OpenCVSecondChapter-threshold)
+
 
 
