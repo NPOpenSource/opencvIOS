@@ -1,5 +1,36 @@
 Opencv 中文网学习
 
+
+
+> `仓库中所有的demo都是用xcode11工程创建的,如果在xcode11以下版本运行,需要对工程进行改造`
+>
+> 步骤如下
+>
+> 1.删除工程中SceneDelegate文件
+>
+> 2.修改AppDelegate.m文件  将
+>
+> ```
+> - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
+>     // Called when a new scene session is being created.
+>     // Use this method to select a configuration to create the new scene with.
+>     return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+> }
+> 
+> 
+> - (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
+>     // Called when the user discards a scene session.
+>     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+>     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+> }
+> ```
+>
+> 两个方法注销掉
+
+
+
+
+
 # 第一章 core 模块. 核心功能
 
 [OpenCV 之ios 环境搭建](/OpenCVFirstProject)
