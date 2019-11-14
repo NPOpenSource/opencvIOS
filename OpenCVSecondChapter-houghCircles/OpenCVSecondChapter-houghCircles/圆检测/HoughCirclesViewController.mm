@@ -1,10 +1,11 @@
 //
-//  HoughLinesViewController.m
-//  OpenCVSecondChapter-hough_lines
+//  HoughCirclesViewController.m
+//  OpenCVSecondChapter-houghCircles
 //
 //  Created by glodon on 2019/11/14.
 //  Copyright © 2019 persion. All rights reserved.
 //
+
 
 #ifdef __cplusplus
 #import <opencv2/opencv.hpp>
@@ -18,96 +19,77 @@ using namespace cv;
 using namespace std;
 
 #endif
-#import "HoughLinesViewController.h"
+#import "HoughCirclesViewController.h"
 
-@interface HoughLinesViewController ()
+@interface HoughCirclesViewController ()
 
 @end
 
-@implementation HoughLinesViewController
+@implementation HoughCirclesViewController
 
-Mat src, edges;
-Mat src_gray;
-Mat standard_hough, probabilistic_hough;
-int min_threshold = 50;
-int max_trackbar = 150;
-int s_trackbar = max_trackbar;
-int p_trackbar = max_trackbar;
+const int cannyThresholdInitialValue = 100;
+const int accumulatorThresholdInitialValue = 50;
+const int maxAccumulatorThreshold = 200;
+const int maxCannyThreshold = 255;
+int cannyThreshold = cannyThresholdInitialValue;
+int accumulatorThreshold = accumulatorThresholdInitialValue;
+
+ Mat src, src_gray;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIImage * src1Image = [UIImage imageNamed:@"HoughLines.jpg"];
+    UIImage * src1Image = [UIImage imageNamed:@"stuff.jpg"];
      src  = [self cvMatFromUIImage:src1Image];
     UIImageView *imageView;
     imageView = [self createImageViewInRect:CGRectMake(0, 100, 150, 150)];
     [self.view addSubview:imageView];
     imageView.image  = [self UIImageFromCVMat:src];
-    cvtColor( src, src_gray, COLOR_RGB2GRAY );
+   cvtColor( src, src_gray, COLOR_BGR2GRAY );
     imageView = [self createImageViewInRect:CGRectMake(0, 250, 150, 150)];
     [self.view addSubview:imageView];
     imageView.image  = [self UIImageFromCVMat:src_gray];
-    Canny( src_gray, edges, 50, 200, 3 );
+    GaussianBlur( src_gray, src_gray, cv::Size(9, 9), 2, 2 );
 
     imageView = [self createImageViewInRect:CGRectMake(0, 400, 150, 150)];
-      [self.view addSubview:imageView];
-      imageView.image  = [self UIImageFromCVMat:edges];
+    [self.view addSubview:imageView];
+    imageView.image  = [self UIImageFromCVMat:src_gray];
     
-    [self createSliderFrame:CGRectMake(150, 100, 100, 50) maxValue:max_trackbar minValue:0 block:^(float value) {
-        s_trackbar = value;
-       [self Standard_Hough];
+    [self createSliderFrame:CGRectMake(150, 100, 100, 50) maxValue:maxCannyThreshold minValue:0 block:^(float value) {
+            cannyThreshold = std::max(cannyThreshold, 1);
+            [self HoughDetection];
     }];
-    [self Standard_Hough];
     
-    [self createSliderFrame:CGRectMake(150, 150, 100, 50) maxValue:max_trackbar minValue:0 block:^(float value) {
-           p_trackbar = value;
-          [self Probabilistic_Hough];
+    [self createSliderFrame:CGRectMake(150, 150, 100, 50) maxValue:maxAccumulatorThreshold minValue:0 block:^(float value) {
+          accumulatorThreshold = std::max(accumulatorThreshold, 1);
+        [self HoughDetection];
        }];
-    [self Probabilistic_Hough];
-
+  [self HoughDetection];
 }
 
--(void)Standard_Hough{
-     vector<Vec2f> s_lines;
-    cvtColor( edges, standard_hough, COLOR_GRAY2BGR );
-          /// 1. Use Standard Hough Transform
-        HoughLines( edges, s_lines, 1, CV_PI/180, min_threshold + s_trackbar, 0, 0 );
-    for( size_t i = 0; i < s_lines.size(); i++ )
-    {
-     float r = s_lines[i][0], t = s_lines[i][1];
-     double cos_t = cos(t), sin_t = sin(t);
-     double x0 = r*cos_t, y0 = r*sin_t;
-     double alpha = 1000;
+ -(void)HoughDetection
+{
+    std::vector<Vec3f> circles;
+           // runs the actual detection
+    HoughCircles( src_gray, circles, HOUGH_GRADIENT, 1, src_gray.rows/8, cannyThreshold, accumulatorThreshold, 0, 0 );
 
-     cv::Point pt1( cvRound(x0 + alpha*(-sin_t)), cvRound(y0 + alpha*cos_t) );
-      cv::Point pt2( cvRound(x0 - alpha*(-sin_t)), cvRound(y0 - alpha*cos_t) );
-      line( standard_hough, pt1, pt2, Scalar(255,0,0), 3, LINE_AA);
+           // clone the colour, input image for displaying purposes
+    Mat display = src.clone();
+    for( size_t i = 0; i < circles.size(); i++ )
+    {
+        cv::Point center(cvRound(circles[i][0]), cvRound(circles[i][1]));
+        int radius = cvRound(circles[i][2]);
+               // circle center
+        circle( display, center, 3, Scalar(0,255,0), -1, 8, 0 );
+               // circle outline
+        circle( display, center, radius, Scalar(0,0,255), 3, 8, 0 );
     }
     
-     UIImageView *imageView;
-    imageView = [self createImageViewInRect:CGRectMake(150, 250, 150, 150)];
-        [self.view addSubview:imageView];
-        imageView.image  = [self UIImageFromCVMat:standard_hough];
-}
-
--(void)Probabilistic_Hough{
-    vector<Vec4i> p_lines;
-     cvtColor( edges, probabilistic_hough, COLOR_GRAY2BGR );
-
-     /// 2. Use Probabilistic Hough Transform
-     HoughLinesP( edges, p_lines, 1, CV_PI/180, min_threshold + p_trackbar, 30, 10 );
-
-     /// Show the result
-     for( size_t i = 0; i < p_lines.size(); i++ )
-        {
-          Vec4i l = p_lines[i];
-          line( probabilistic_hough, cv::Point(l[0], l[1]), cv::Point(l[2], l[3]), Scalar(255,0,0), 3, LINE_AA);
-        }
     UIImageView *imageView;
-    imageView = [self createImageViewInRect:CGRectMake(150, 400, 150, 150)];
-    [self.view addSubview:imageView];
-    imageView.image  = [self UIImageFromCVMat:probabilistic_hough];
-}
+      imageView = [self createImageViewInRect:CGRectMake(150, 250, 150, 150)];
+      [self.view addSubview:imageView];
+      imageView.image  = [self UIImageFromCVMat:display];
 
+}
 #pragma mark  - private
 //brg
 - (cv::Mat)cvMatFromUIImage:(UIImage *)image

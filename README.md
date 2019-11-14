@@ -81,6 +81,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 霍夫线变换](/OpenCVSecondChapter-hough_lines)
 
+[OpenCV 之ios 霍夫圆变换](OpenCVSecondChapter-houghCircles)
+
 # 
 
 
