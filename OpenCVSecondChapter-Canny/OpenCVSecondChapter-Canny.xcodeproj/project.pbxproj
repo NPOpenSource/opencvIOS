@@ -18,6 +18,7 @@
 		24D2762A237C2576001FB9E9 /* OpenCVSecondChapter_CannyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27629237C2576001FB9E9 /* OpenCVSecondChapter_CannyTests.m */; };
 		24D27635237C2576001FB9E9 /* OpenCVSecondChapter_CannyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27634237C2576001FB9E9 /* OpenCVSecondChapter_CannyUITests.m */; };
 		24D27645237C2604001FB9E9 /* CannyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24D27644237C2604001FB9E9 /* CannyViewController.mm */; };
+		24D2768C237CF8B6001FB9E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D27614237C2574001FB9E9 /* ViewController.m */; };
 		3F277BD84E5A70696A01CAE1 /* libPods-OpenCVSecondChapter-Canny-OpenCVSecondChapter-CannyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4232835D1A02C937420AA8F2 /* libPods-OpenCVSecondChapter-Canny-OpenCVSecondChapter-CannyUITests.a */; };
 		75BB88F5AA1F27015522B0CE /* libPods-OpenCVSecondChapter-Canny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2700FC57D3B8A9C9247221 /* libPods-OpenCVSecondChapter-Canny.a */; };
 /* End PBXBuildFile section */
@@ -448,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D2768C237CF8B6001FB9E9 /* ViewController.m in Sources */,
 				24D27635237C2576001FB9E9 /* OpenCVSecondChapter_CannyUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

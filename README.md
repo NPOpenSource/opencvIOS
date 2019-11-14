@@ -79,6 +79,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios Canny 边缘检测](OpenCVSecondChapter-Canny)
 
+[OpenCV 之ios 霍夫线变换](/OpenCVSecondChapter-hough_lines)
+
 # 
 
 
