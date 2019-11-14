@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(UIImageView *)createImageViewInRect:(CGRect)frame;
 -(UISlider *)createSliderFrame:(CGRect )frame maxValue:(float)maxValue minValue:(float)intValue block:(void(^)(float value))exeBlock;
 -(UIButton *)createButtonFrame:(CGRect)frame title:(NSString *)title Block:(NSString*(^)(int hitCount))exeBlock;
+
+-(NSTimer *)createTimer:(NSTimeInterval)seconds exeBlock:(void(^)(void))block;
 @end
 
 NS_ASSUME_NONNULL_END

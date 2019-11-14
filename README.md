@@ -83,6 +83,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 霍夫圆变换](OpenCVSecondChapter-houghCircles)
 
+[OpenCV 之ios  Remapping 重映射](OpenCVSecondChapter-remap)
+
 # 
 
 

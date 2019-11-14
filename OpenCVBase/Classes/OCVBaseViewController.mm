@@ -8,6 +8,8 @@
 #import "OCVBaseViewController.h"
 #import <objc/runtime.h>
 
+
+
 @interface UIButton (exeBlock)
 @property (nonatomic ,strong) NSString* (^exeBlock)(int hitCount) ;
 @property (nonatomic ,strong) NSNumber * hitCount ;
@@ -56,7 +58,6 @@ static int sliderExeBlockKey;
 @end
 
 @interface OCVBaseViewController ()
-
 @end
 
 @implementation OCVBaseViewController
@@ -105,6 +106,19 @@ static int sliderExeBlockKey;
           [button setTitle:title forState:UIControlStateNormal];
     }
 }
+
+-(NSTimer *)createTimer:(NSTimeInterval)seconds exeBlock:(void(^)(void))block{
+ return [NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(exeTimerBlock:) userInfo:[block copy] repeats:YES];
+   
+}
+
+-(void)exeTimerBlock:(NSTimer *)timer{
+    if ([timer userInfo]) {
+        void (^block)(void) = (void (^)(void))[timer userInfo];
+        block();
+    }
+}
+
 
 
 @end
