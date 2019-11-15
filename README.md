@@ -85,6 +85,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios  Remapping 重映射](OpenCVSecondChapter-remap)
 
+[OpenCV 之ios 仿射变换](/OpenCVSecondChapter-affine)
+
 # 
 
 
