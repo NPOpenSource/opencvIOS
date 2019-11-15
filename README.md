@@ -87,6 +87,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 仿射变换](/OpenCVSecondChapter-affine)
 
+[OpenCV 之ios 直方图均衡化](OpenCVSecondChapter-histogram_equalization)
+
 # 
 
 
