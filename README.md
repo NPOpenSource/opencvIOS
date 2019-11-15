@@ -29,9 +29,11 @@ Opencv 中文网学习
 
 
 
+# 基础部分
 
+该章节不注重讲解原理,只简单介绍使用和显示最终的效果(目前也是学习阶段)
 
-# 第一章 core 模块. 核心功能
+###  第一章 core 模块. 核心功能
 
 [OpenCV 之ios 环境搭建](/OpenCVFirstProject)
 
@@ -57,7 +59,7 @@ Opencv 中文网学习
 
 
 
-# 第二章 *imgproc* 模块. 图像处理
+### 第二章 *imgproc* 模块. 图像处理
 
 [OpenCV 之ios 图像平滑处理](/OpenCVSecondChapter-imageDeal)
 
@@ -89,7 +91,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 直方图均衡化](OpenCVSecondChapter-histogram_equalization)
 
+[OpenCV 之ios直方图计算](/OpenCVSecondChapter-histogram_calculation)
+
+[OpenCV 之ios 直方图对比](/OpenCVSecondChapter-histogram_comparison)
+
 # 
-
-
-
