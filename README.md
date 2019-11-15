@@ -95,4 +95,6 @@ Opencv 中文网学习
 
 [OpenCV 之ios 直方图对比](/OpenCVSecondChapter-histogram_comparison)
 
+[OpenCV 之ios 反向投影](/OpenCVSecondChapter-back_projection)
+
 # 
