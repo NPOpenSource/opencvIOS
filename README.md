@@ -101,6 +101,12 @@ Opencv 中文网学习
 
 [OpenCV 之ios 在图像中寻找轮廓](OpenCVSecondChapter-find_contours)
 
+[OpenCV 之ios 计算物体的凸包](OpenCVSecondChapter-shapedescriptors)
+
+
+
+
+
 
 
 # 
