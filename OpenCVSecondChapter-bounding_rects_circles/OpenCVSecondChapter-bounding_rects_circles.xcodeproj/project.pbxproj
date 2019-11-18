@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F340052382BAB70004A2C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340042382BAB70004A2C7 /* AppDelegate.m */; };
+		24F340082382BAB70004A2C7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340072382BAB70004A2C7 /* SceneDelegate.m */; };
+		24F3400B2382BAB70004A2C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3400A2382BAB70004A2C7 /* ViewController.m */; };
+		24F3400E2382BAB70004A2C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F3400C2382BAB70004A2C7 /* Main.storyboard */; };
+		24F340102382BAB80004A2C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F3400F2382BAB80004A2C7 /* Assets.xcassets */; };
+		24F340132382BAB80004A2C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F340112382BAB80004A2C7 /* LaunchScreen.storyboard */; };
+		24F340162382BAB80004A2C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340152382BAB80004A2C7 /* main.m */; };
+		24F340202382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3401F2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesTests.m */; };
+		24F3402B2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3402A2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesUITests.m */; };
+		24F3403B2382BB4E0004A2C7 /* BoundingRectsCirclesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24F3403A2382BB4E0004A2C7 /* BoundingRectsCirclesViewController.mm */; };
+		4678D336BAE6EA4621DD0B80 /* libPods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4246309B8ABD832A7FE7D8F9 /* libPods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.a */; };
+		68340EAC815CFFFAF36ED4F2 /* libPods-OpenCVSecondChapter-bounding_rects_circlesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C06888C5E2A19CF32A9053 /* libPods-OpenCVSecondChapter-bounding_rects_circlesTests.a */; };
+		70BAC12211A177EC4185EF1A /* libPods-OpenCVSecondChapter-bounding_rects_circles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B2AAC9D7BEFE686207F75 /* libPods-OpenCVSecondChapter-bounding_rects_circles.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24F3401C2382BAB80004A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F33FF82382BAB70004A2C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F33FFF2382BAB70004A2C7;
+			remoteInfo = "OpenCVSecondChapter-bounding_rects_circles";
+		};
+		24F340272382BAB80004A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F33FF82382BAB70004A2C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F33FFF2382BAB70004A2C7;
+			remoteInfo = "OpenCVSecondChapter-bounding_rects_circles";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0106E481DB9D0B7034740E7D /* Pods-OpenCVSecondChapter-bounding_rects_circlesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-bounding_rects_circlesTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circlesTests/Pods-OpenCVSecondChapter-bounding_rects_circlesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		120D3F92068A57E949542001 /* Pods-OpenCVSecondChapter-bounding_rects_circles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-bounding_rects_circles.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles/Pods-OpenCVSecondChapter-bounding_rects_circles.debug.xcconfig"; sourceTree = "<group>"; };
+		24F340002382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVSecondChapter-bounding_rects_circles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F340032382BAB70004A2C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24F340042382BAB70004A2C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24F340062382BAB70004A2C7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24F340072382BAB70004A2C7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24F340092382BAB70004A2C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24F3400A2382BAB70004A2C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24F3400D2382BAB70004A2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24F3400F2382BAB80004A2C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24F340122382BAB80004A2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24F340142382BAB80004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F340152382BAB80004A2C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24F3401B2382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-bounding_rects_circlesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F3401F2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_bounding_rects_circlesTests.m; sourceTree = "<group>"; };
+		24F340212382BAB80004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F340262382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-bounding_rects_circlesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F3402A2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_bounding_rects_circlesUITests.m; sourceTree = "<group>"; };
+		24F3402C2382BAB80004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F340392382BB4E0004A2C7 /* BoundingRectsCirclesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoundingRectsCirclesViewController.h; sourceTree = "<group>"; };
+		24F3403A2382BB4E0004A2C7 /* BoundingRectsCirclesViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BoundingRectsCirclesViewController.mm; sourceTree = "<group>"; };
+		4246309B8ABD832A7FE7D8F9 /* libPods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC7C56AB7A7A7A74F7D52BF /* Pods-OpenCVSecondChapter-bounding_rects_circlesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-bounding_rects_circlesTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circlesTests/Pods-OpenCVSecondChapter-bounding_rects_circlesTests.release.xcconfig"; sourceTree = "<group>"; };
+		505B2AAC9D7BEFE686207F75 /* libPods-OpenCVSecondChapter-bounding_rects_circles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-bounding_rects_circles.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEE068F3E704B885555BED9 /* Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E4A6F5724DCB7442C5E4CE9 /* Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B8C06888C5E2A19CF32A9053 /* libPods-OpenCVSecondChapter-bounding_rects_circlesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-bounding_rects_circlesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D372A4698B524BCB56FA2B24 /* Pods-OpenCVSecondChapter-bounding_rects_circles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-bounding_rects_circles.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles/Pods-OpenCVSecondChapter-bounding_rects_circles.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F33FFD2382BAB70004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BAC12211A177EC4185EF1A /* libPods-OpenCVSecondChapter-bounding_rects_circles.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340182382BAB80004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68340EAC815CFFFAF36ED4F2 /* libPods-OpenCVSecondChapter-bounding_rects_circlesTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340232382BAB80004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4678D336BAE6EA4621DD0B80 /* libPods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F33FF72382BAB70004A2C7 = {
+			isa = PBXGroup;
+			children = (
+				24F340022382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles */,
+				24F3401E2382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesTests */,
+				24F340292382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesUITests */,
+				24F340012382BAB70004A2C7 /* Products */,
+				85E18A5E57B8214DED210587 /* Pods */,
+				D82E4918142D19932F8CA535 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24F340012382BAB70004A2C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F340002382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles.app */,
+				24F3401B2382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesTests.xctest */,
+				24F340262382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24F340022382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles */ = {
+			isa = PBXGroup;
+			children = (
+				24F340382382BB2F0004A2C7 /* 创建包围轮廓的矩形和圆形边界框 */,
+				24F340032382BAB70004A2C7 /* AppDelegate.h */,
+				24F340042382BAB70004A2C7 /* AppDelegate.m */,
+				24F340062382BAB70004A2C7 /* SceneDelegate.h */,
+				24F340072382BAB70004A2C7 /* SceneDelegate.m */,
+				24F340092382BAB70004A2C7 /* ViewController.h */,
+				24F3400A2382BAB70004A2C7 /* ViewController.m */,
+				24F3400C2382BAB70004A2C7 /* Main.storyboard */,
+				24F3400F2382BAB80004A2C7 /* Assets.xcassets */,
+				24F340112382BAB80004A2C7 /* LaunchScreen.storyboard */,
+				24F340142382BAB80004A2C7 /* Info.plist */,
+				24F340152382BAB80004A2C7 /* main.m */,
+			);
+			path = "OpenCVSecondChapter-bounding_rects_circles";
+			sourceTree = "<group>";
+		};
+		24F3401E2382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesTests */ = {
+			isa = PBXGroup;
+			children = (
+				24F3401F2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesTests.m */,
+				24F340212382BAB80004A2C7 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-bounding_rects_circlesTests";
+			sourceTree = "<group>";
+		};
+		24F340292382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24F3402A2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesUITests.m */,
+				24F3402C2382BAB80004A2C7 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-bounding_rects_circlesUITests";
+			sourceTree = "<group>";
+		};
+		24F340382382BB2F0004A2C7 /* 创建包围轮廓的矩形和圆形边界框 */ = {
+			isa = PBXGroup;
+			children = (
+				24F340392382BB4E0004A2C7 /* BoundingRectsCirclesViewController.h */,
+				24F3403A2382BB4E0004A2C7 /* BoundingRectsCirclesViewController.mm */,
+			);
+			path = "创建包围轮廓的矩形和圆形边界框";
+			sourceTree = "<group>";
+		};
+		85E18A5E57B8214DED210587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				120D3F92068A57E949542001 /* Pods-OpenCVSecondChapter-bounding_rects_circles.debug.xcconfig */,
+				D372A4698B524BCB56FA2B24 /* Pods-OpenCVSecondChapter-bounding_rects_circles.release.xcconfig */,
+				5EEE068F3E704B885555BED9 /* Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.debug.xcconfig */,
+				6E4A6F5724DCB7442C5E4CE9 /* Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.release.xcconfig */,
+				0106E481DB9D0B7034740E7D /* Pods-OpenCVSecondChapter-bounding_rects_circlesTests.debug.xcconfig */,
+				4AC7C56AB7A7A7A74F7D52BF /* Pods-OpenCVSecondChapter-bounding_rects_circlesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D82E4918142D19932F8CA535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505B2AAC9D7BEFE686207F75 /* libPods-OpenCVSecondChapter-bounding_rects_circles.a */,
+				4246309B8ABD832A7FE7D8F9 /* libPods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.a */,
+				B8C06888C5E2A19CF32A9053 /* libPods-OpenCVSecondChapter-bounding_rects_circlesTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24F33FFF2382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F3402F2382BAB80004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-bounding_rects_circles" */;
+			buildPhases = (
+				0C24A2E20DBBA70FB1BD6CEB /* [CP] Check Pods Manifest.lock */,
+				24F33FFC2382BAB70004A2C7 /* Sources */,
+				24F33FFD2382BAB70004A2C7 /* Frameworks */,
+				24F33FFE2382BAB70004A2C7 /* Resources */,
+				7FFC7D44944321BAD00C7A13 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVSecondChapter-bounding_rects_circles";
+			productName = "OpenCVSecondChapter-bounding_rects_circles";
+			productReference = 24F340002382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24F3401A2382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F340322382BAB80004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-bounding_rects_circlesTests" */;
+			buildPhases = (
+				51BE23124D93E8F8D7A97032 /* [CP] Check Pods Manifest.lock */,
+				24F340172382BAB80004A2C7 /* Sources */,
+				24F340182382BAB80004A2C7 /* Frameworks */,
+				24F340192382BAB80004A2C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F3401D2382BAB80004A2C7 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-bounding_rects_circlesTests";
+			productName = "OpenCVSecondChapter-bounding_rects_circlesTests";
+			productReference = 24F3401B2382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24F340252382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F340352382BAB80004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-bounding_rects_circlesUITests" */;
+			buildPhases = (
+				363AEB4585C8D6609731EB10 /* [CP] Check Pods Manifest.lock */,
+				24F340222382BAB80004A2C7 /* Sources */,
+				24F340232382BAB80004A2C7 /* Frameworks */,
+				24F340242382BAB80004A2C7 /* Resources */,
+				4BE97771312874E8EF972799 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F340282382BAB80004A2C7 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-bounding_rects_circlesUITests";
+			productName = "OpenCVSecondChapter-bounding_rects_circlesUITests";
+			productReference = 24F340262382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24F33FF82382BAB70004A2C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					24F33FFF2382BAB70004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					24F3401A2382BAB80004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24F33FFF2382BAB70004A2C7;
+					};
+					24F340252382BAB80004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24F33FFF2382BAB70004A2C7;
+					};
+				};
+			};
+			buildConfigurationList = 24F33FFB2382BAB70004A2C7 /* Build configuration list for PBXProject "OpenCVSecondChapter-bounding_rects_circles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24F33FF72382BAB70004A2C7;
+			productRefGroup = 24F340012382BAB70004A2C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24F33FFF2382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles */,
+				24F3401A2382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesTests */,
+				24F340252382BAB80004A2C7 /* OpenCVSecondChapter-bounding_rects_circlesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F33FFE2382BAB70004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340132382BAB80004A2C7 /* LaunchScreen.storyboard in Resources */,
+				24F340102382BAB80004A2C7 /* Assets.xcassets in Resources */,
+				24F3400E2382BAB70004A2C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340192382BAB80004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340242382BAB80004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C24A2E20DBBA70FB1BD6CEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-bounding_rects_circles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363AEB4585C8D6609731EB10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BE97771312874E8EF972799 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests/Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51BE23124D93E8F8D7A97032 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-bounding_rects_circlesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFC7D44944321BAD00C7A13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles/Pods-OpenCVSecondChapter-bounding_rects_circles-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles/Pods-OpenCVSecondChapter-bounding_rects_circles-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-bounding_rects_circles/Pods-OpenCVSecondChapter-bounding_rects_circles-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F33FFC2382BAB70004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F3403B2382BB4E0004A2C7 /* BoundingRectsCirclesViewController.mm in Sources */,
+				24F3400B2382BAB70004A2C7 /* ViewController.m in Sources */,
+				24F340052382BAB70004A2C7 /* AppDelegate.m in Sources */,
+				24F340162382BAB80004A2C7 /* main.m in Sources */,
+				24F340082382BAB70004A2C7 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340172382BAB80004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340202382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340222382BAB80004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F3402B2382BAB80004A2C7 /* OpenCVSecondChapter_bounding_rects_circlesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24F3401D2382BAB80004A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F33FFF2382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles */;
+			targetProxy = 24F3401C2382BAB80004A2C7 /* PBXContainerItemProxy */;
+		};
+		24F340282382BAB80004A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F33FFF2382BAB70004A2C7 /* OpenCVSecondChapter-bounding_rects_circles */;
+			targetProxy = 24F340272382BAB80004A2C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24F3400C2382BAB70004A2C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F3400D2382BAB70004A2C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24F340112382BAB80004A2C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F340122382BAB80004A2C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24F3402D2382BAB80004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24F3402E2382BAB80004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24F340302382BAB80004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120D3F92068A57E949542001 /* Pods-OpenCVSecondChapter-bounding_rects_circles.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-bounding_rects_circles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-bounding-rects-circles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24F340312382BAB80004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D372A4698B524BCB56FA2B24 /* Pods-OpenCVSecondChapter-bounding_rects_circles.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-bounding_rects_circles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-bounding-rects-circles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24F340332382BAB80004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0106E481DB9D0B7034740E7D /* Pods-OpenCVSecondChapter-bounding_rects_circlesTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-bounding_rects_circlesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-bounding-rects-circlesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-bounding_rects_circles.app/OpenCVSecondChapter-bounding_rects_circles";
+			};
+			name = Debug;
+		};
+		24F340342382BAB80004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC7C56AB7A7A7A74F7D52BF /* Pods-OpenCVSecondChapter-bounding_rects_circlesTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-bounding_rects_circlesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-bounding-rects-circlesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-bounding_rects_circles.app/OpenCVSecondChapter-bounding_rects_circles";
+			};
+			name = Release;
+		};
+		24F340362382BAB80004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEE068F3E704B885555BED9 /* Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-bounding_rects_circlesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-bounding-rects-circlesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-bounding_rects_circles";
+			};
+			name = Debug;
+		};
+		24F340372382BAB80004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4A6F5724DCB7442C5E4CE9 /* Pods-OpenCVSecondChapter-bounding_rects_circles-OpenCVSecondChapter-bounding_rects_circlesUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-bounding_rects_circlesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-bounding-rects-circlesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-bounding_rects_circles";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F33FFB2382BAB70004A2C7 /* Build configuration list for PBXProject "OpenCVSecondChapter-bounding_rects_circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F3402D2382BAB80004A2C7 /* Debug */,
+				24F3402E2382BAB80004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F3402F2382BAB80004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-bounding_rects_circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340302382BAB80004A2C7 /* Debug */,
+				24F340312382BAB80004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F340322382BAB80004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-bounding_rects_circlesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340332382BAB80004A2C7 /* Debug */,
+				24F340342382BAB80004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F340352382BAB80004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-bounding_rects_circlesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340362382BAB80004A2C7 /* Debug */,
+				24F340372382BAB80004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24F33FF82382BAB70004A2C7 /* Project object */;
+}

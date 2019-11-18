@@ -103,7 +103,7 @@ Opencv 中文网学习
 
 [OpenCV 之ios 计算物体的凸包](OpenCVSecondChapter-shapedescriptors)
 
-
+[OpenCV 之ios  创建包围轮廓的矩形和圆形边界框](/OpenCVSecondChapter-bounding_rects_circles)
 
 
 
