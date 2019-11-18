@@ -35,7 +35,6 @@ static int buttonhitCountKey;
 
 -(NSString *(^)(int))exeBlock{
     return  objc_getAssociatedObject(self,  &buttonExeBlockKey);
-
 }
 
 @end
@@ -43,16 +42,27 @@ static int buttonhitCountKey;
 
 @interface UISlider (exeBlock)
 @property (nonatomic ,strong) void (^exeBlock)(float value) ;
+@property (nonatomic ,weak) UILabel * valuelabel;
+
 
 
 @end
 static int sliderExeBlockKey;
+static int slidervalueLabelBlockKey;
+
 @implementation UISlider(exeBlock)
 - (void)setExeBlock:(void (^)(float))exeBlock{
      objc_setAssociatedObject(self, &sliderExeBlockKey, exeBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 - (void (^)(float))exeBlock{
      return  objc_getAssociatedObject(self,  &sliderExeBlockKey);
+}
+
+-(void)setValuelabel:(UILabel *)valuelabel{
+    objc_setAssociatedObject(self, &slidervalueLabelBlockKey, valuelabel, OBJC_ASSOCIATION_ASSIGN);
+}
+-(UILabel *)valuelabel{
+        return  objc_getAssociatedObject(self,  &slidervalueLabelBlockKey);
 }
 
 @end
@@ -72,17 +82,34 @@ static int sliderExeBlockKey;
     return imageView;
 }
 
--(UISlider *)createSliderFrame:(CGRect )frame maxValue:(float)maxValue minValue:(float)minValue block:(void(^)(float value))exeBlock{
-    UISlider *slider = [[UISlider alloc] initWithFrame:frame];
-    [slider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
-    slider.maximumValue = maxValue;
-    slider.minimumValue = minValue;
-    slider.exeBlock = exeBlock;
-      [self.view addSubview:slider];
-    return slider;
+-(UISlider *)createSliderFrame:(CGRect )frame maxValue:(float)maxValue currentValue:(float)currentValue minValue:(float)minValue block:(void(^)(float value))exeBlock{
+  UILabel * label =  [self createLabelFrame:CGRectMake(frame.origin.x, frame.origin.y, 50, frame.size.height)];
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(frame.origin.x+50, frame.origin.y, frame.size.width-50, frame.size.height)];
+       [slider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
+       slider.maximumValue = maxValue;
+       slider.minimumValue = minValue;
+       slider.exeBlock = exeBlock;
+    slider.valuelabel = label;
+    if (maxValue>1) {
+         label.text = [NSString stringWithFormat:@"%d",(int)currentValue];
+    }else{
+        label.text = [NSString stringWithFormat:@"%f",currentValue];
+    }
+    slider.value = currentValue;
+    [self.view addSubview:slider];
+       return slider;
+}
+
+-(UISlider *)createSliderFrame:(CGRect )frame maxValue:(float)maxValue minValue:(float)minValue block:(void(^)(float value))exeBlock {
+    return [self createSliderFrame:frame maxValue:maxValue currentValue:minValue minValue:minValue block:exeBlock];
 }
 
 -(void)sliderAction:(UISlider*)slider{
+      if (slider.maximumValue>1) {
+           slider.valuelabel.text = [NSString stringWithFormat:@"%d",(int)slider.value];
+      }else{
+           slider.valuelabel.text = [NSString stringWithFormat:@"%f",slider.value];
+      }
     slider.exeBlock(slider.value);
 }
 
@@ -119,6 +146,12 @@ static int sliderExeBlockKey;
     }
 }
 
-
+-(UILabel *)createLabelFrame:(CGRect )rect{
+    UILabel * label = [[UILabel alloc]initWithFrame:rect];
+    label.font = [UIFont systemFontOfSize:16];
+    label.textColor = [UIColor blackColor];
+    [self.view addSubview:label];
+    return label;
+}
 
 @end

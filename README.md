@@ -99,4 +99,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 模板匹配](/OpenCVSecondChapter-emplate_matching)
 
+[OpenCV 之ios 在图像中寻找轮廓](OpenCVSecondChapter-find_contours)
+
+
+
 # 
