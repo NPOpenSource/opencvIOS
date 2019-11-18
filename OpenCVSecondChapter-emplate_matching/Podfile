@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'OpenCVSecondChapter-emplate_matching' do
+  # Comment the next line if you don't want to use dynamic frameworks
+    pod 'OpenCVSource', :path => '../OpenCVSource'
+  pod 'OpenCVUtils', :path => '../OpenCVUtils'
+  pod 'OpenCVBase', :path => '../OpenCVBase'
+
+  # Pods for OpenCVSecondChapter-emplate_matching
+
+  target 'OpenCVSecondChapter-emplate_matchingTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'OpenCVSecondChapter-emplate_matchingUITests' do
+    # Pods for testing
+  end
+
+end
