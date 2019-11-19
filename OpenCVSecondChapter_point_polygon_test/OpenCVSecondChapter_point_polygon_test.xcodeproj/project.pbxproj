@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F340D423838CCD0004A2C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340D323838CCD0004A2C7 /* AppDelegate.m */; };
+		24F340D723838CCD0004A2C7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340D623838CCD0004A2C7 /* SceneDelegate.m */; };
+		24F340DA23838CCD0004A2C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340D923838CCD0004A2C7 /* ViewController.m */; };
+		24F340DD23838CCD0004A2C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F340DB23838CCD0004A2C7 /* Main.storyboard */; };
+		24F340DF23838CCE0004A2C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F340DE23838CCE0004A2C7 /* Assets.xcassets */; };
+		24F340E223838CCE0004A2C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F340E023838CCE0004A2C7 /* LaunchScreen.storyboard */; };
+		24F340E523838CCE0004A2C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340E423838CCE0004A2C7 /* main.m */; };
+		24F340EF23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340EE23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.m */; };
+		24F340FA23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340F923838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.m */; };
+		24FC131F23838DA900114F26 /* PointPolygonTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24FC131E23838DA900114F26 /* PointPolygonTestViewController.mm */; };
+		4DBFFFCAA6AB6290BF088BA4 /* libPods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865A7FD97F07F2F61C2B91C1 /* libPods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.a */; };
+		62DA8B4321D5683E0A21626B /* libPods-OpenCVSecondChapter_point_polygon_testTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 234BB05CD869D27917D27028 /* libPods-OpenCVSecondChapter_point_polygon_testTests.a */; };
+		76B5C2C58D1F6E1BD76ED656 /* libPods-OpenCVSecondChapter_point_polygon_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46ADCF030063CB42AE4691DF /* libPods-OpenCVSecondChapter_point_polygon_test.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24F340EB23838CCE0004A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F340C723838CCD0004A2C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F340CE23838CCD0004A2C7;
+			remoteInfo = OpenCVSecondChapter_point_polygon_test;
+		};
+		24F340F623838CCE0004A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F340C723838CCD0004A2C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F340CE23838CCD0004A2C7;
+			remoteInfo = OpenCVSecondChapter_point_polygon_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		234BB05CD869D27917D27028 /* libPods-OpenCVSecondChapter_point_polygon_testTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter_point_polygon_testTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F340CF23838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVSecondChapter_point_polygon_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F340D223838CCD0004A2C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24F340D323838CCD0004A2C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24F340D523838CCD0004A2C7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24F340D623838CCD0004A2C7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24F340D823838CCD0004A2C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24F340D923838CCD0004A2C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24F340DC23838CCD0004A2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24F340DE23838CCE0004A2C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24F340E123838CCE0004A2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24F340E323838CCE0004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F340E423838CCE0004A2C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24F340EA23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSecondChapter_point_polygon_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F340EE23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_point_polygon_testTests.m; sourceTree = "<group>"; };
+		24F340F023838CCE0004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F340F523838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSecondChapter_point_polygon_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F340F923838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_point_polygon_testUITests.m; sourceTree = "<group>"; };
+		24F340FB23838CCE0004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FC131D23838DA900114F26 /* PointPolygonTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointPolygonTestViewController.h; sourceTree = "<group>"; };
+		24FC131E23838DA900114F26 /* PointPolygonTestViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PointPolygonTestViewController.mm; sourceTree = "<group>"; };
+		34D0C540AA04A2947E505C59 /* Pods-OpenCVSecondChapter_point_polygon_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter_point_polygon_testTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter_point_polygon_testTests/Pods-OpenCVSecondChapter_point_polygon_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46ADCF030063CB42AE4691DF /* libPods-OpenCVSecondChapter_point_polygon_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter_point_polygon_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDF7EEBF6E578411BC7E591 /* Pods-OpenCVSecondChapter_point_polygon_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter_point_polygon_test.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test/Pods-OpenCVSecondChapter_point_polygon_test.debug.xcconfig"; sourceTree = "<group>"; };
+		6A699363B78307809B84C77C /* Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		865A7FD97F07F2F61C2B91C1 /* libPods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7E150AE9DB421436FA78AA /* Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3C957BD85251C03479CE44D /* Pods-OpenCVSecondChapter_point_polygon_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter_point_polygon_testTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter_point_polygon_testTests/Pods-OpenCVSecondChapter_point_polygon_testTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFE22640C8845F8B3DCD1650 /* Pods-OpenCVSecondChapter_point_polygon_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter_point_polygon_test.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test/Pods-OpenCVSecondChapter_point_polygon_test.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F340CC23838CCD0004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B5C2C58D1F6E1BD76ED656 /* libPods-OpenCVSecondChapter_point_polygon_test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340E723838CCE0004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DA8B4321D5683E0A21626B /* libPods-OpenCVSecondChapter_point_polygon_testTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340F223838CCE0004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBFFFCAA6AB6290BF088BA4 /* libPods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F340C623838CCD0004A2C7 = {
+			isa = PBXGroup;
+			children = (
+				24F340D123838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test */,
+				24F340ED23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests */,
+				24F340F823838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests */,
+				24F340D023838CCD0004A2C7 /* Products */,
+				4B272A2E5A5E6CDB25DAC92E /* Pods */,
+				27C77A3EF4BE2DCA25CFA0E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24F340D023838CCD0004A2C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F340CF23838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test.app */,
+				24F340EA23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.xctest */,
+				24F340F523838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24F340D123838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test */ = {
+			isa = PBXGroup;
+			children = (
+				24F3410723838D350004A2C7 /* 多边形测试 */,
+				24F340D223838CCD0004A2C7 /* AppDelegate.h */,
+				24F340D323838CCD0004A2C7 /* AppDelegate.m */,
+				24F340D523838CCD0004A2C7 /* SceneDelegate.h */,
+				24F340D623838CCD0004A2C7 /* SceneDelegate.m */,
+				24F340D823838CCD0004A2C7 /* ViewController.h */,
+				24F340D923838CCD0004A2C7 /* ViewController.m */,
+				24F340DB23838CCD0004A2C7 /* Main.storyboard */,
+				24F340DE23838CCE0004A2C7 /* Assets.xcassets */,
+				24F340E023838CCE0004A2C7 /* LaunchScreen.storyboard */,
+				24F340E323838CCE0004A2C7 /* Info.plist */,
+				24F340E423838CCE0004A2C7 /* main.m */,
+			);
+			path = OpenCVSecondChapter_point_polygon_test;
+			sourceTree = "<group>";
+		};
+		24F340ED23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				24F340EE23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.m */,
+				24F340F023838CCE0004A2C7 /* Info.plist */,
+			);
+			path = OpenCVSecondChapter_point_polygon_testTests;
+			sourceTree = "<group>";
+		};
+		24F340F823838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24F340F923838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.m */,
+				24F340FB23838CCE0004A2C7 /* Info.plist */,
+			);
+			path = OpenCVSecondChapter_point_polygon_testUITests;
+			sourceTree = "<group>";
+		};
+		24F3410723838D350004A2C7 /* 多边形测试 */ = {
+			isa = PBXGroup;
+			children = (
+				24FC131D23838DA900114F26 /* PointPolygonTestViewController.h */,
+				24FC131E23838DA900114F26 /* PointPolygonTestViewController.mm */,
+			);
+			path = "多边形测试";
+			sourceTree = "<group>";
+		};
+		27C77A3EF4BE2DCA25CFA0E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46ADCF030063CB42AE4691DF /* libPods-OpenCVSecondChapter_point_polygon_test.a */,
+				865A7FD97F07F2F61C2B91C1 /* libPods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.a */,
+				234BB05CD869D27917D27028 /* libPods-OpenCVSecondChapter_point_polygon_testTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B272A2E5A5E6CDB25DAC92E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DDF7EEBF6E578411BC7E591 /* Pods-OpenCVSecondChapter_point_polygon_test.debug.xcconfig */,
+				CFE22640C8845F8B3DCD1650 /* Pods-OpenCVSecondChapter_point_polygon_test.release.xcconfig */,
+				AE7E150AE9DB421436FA78AA /* Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.debug.xcconfig */,
+				6A699363B78307809B84C77C /* Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.release.xcconfig */,
+				34D0C540AA04A2947E505C59 /* Pods-OpenCVSecondChapter_point_polygon_testTests.debug.xcconfig */,
+				B3C957BD85251C03479CE44D /* Pods-OpenCVSecondChapter_point_polygon_testTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24F340CE23838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F340FE23838CCE0004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter_point_polygon_test" */;
+			buildPhases = (
+				687DF8358E7FF114E53910A2 /* [CP] Check Pods Manifest.lock */,
+				24F340CB23838CCD0004A2C7 /* Sources */,
+				24F340CC23838CCD0004A2C7 /* Frameworks */,
+				24F340CD23838CCD0004A2C7 /* Resources */,
+				B4434958DDC4BB8449EFB1DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVSecondChapter_point_polygon_test;
+			productName = OpenCVSecondChapter_point_polygon_test;
+			productReference = 24F340CF23838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24F340E923838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F3410123838CCE0004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter_point_polygon_testTests" */;
+			buildPhases = (
+				D42CE846135A3DE8B9C11D5C /* [CP] Check Pods Manifest.lock */,
+				24F340E623838CCE0004A2C7 /* Sources */,
+				24F340E723838CCE0004A2C7 /* Frameworks */,
+				24F340E823838CCE0004A2C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F340EC23838CCE0004A2C7 /* PBXTargetDependency */,
+			);
+			name = OpenCVSecondChapter_point_polygon_testTests;
+			productName = OpenCVSecondChapter_point_polygon_testTests;
+			productReference = 24F340EA23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24F340F423838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F3410423838CCE0004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter_point_polygon_testUITests" */;
+			buildPhases = (
+				AF499D9814C1B4DCF82C117E /* [CP] Check Pods Manifest.lock */,
+				24F340F123838CCE0004A2C7 /* Sources */,
+				24F340F223838CCE0004A2C7 /* Frameworks */,
+				24F340F323838CCE0004A2C7 /* Resources */,
+				F89A04D776EB6537A2CC8246 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F340F723838CCE0004A2C7 /* PBXTargetDependency */,
+			);
+			name = OpenCVSecondChapter_point_polygon_testUITests;
+			productName = OpenCVSecondChapter_point_polygon_testUITests;
+			productReference = 24F340F523838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24F340C723838CCD0004A2C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					24F340CE23838CCD0004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					24F340E923838CCE0004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24F340CE23838CCD0004A2C7;
+					};
+					24F340F423838CCE0004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24F340CE23838CCD0004A2C7;
+					};
+				};
+			};
+			buildConfigurationList = 24F340CA23838CCD0004A2C7 /* Build configuration list for PBXProject "OpenCVSecondChapter_point_polygon_test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24F340C623838CCD0004A2C7;
+			productRefGroup = 24F340D023838CCD0004A2C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24F340CE23838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test */,
+				24F340E923838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests */,
+				24F340F423838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F340CD23838CCD0004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340E223838CCE0004A2C7 /* LaunchScreen.storyboard in Resources */,
+				24F340DF23838CCE0004A2C7 /* Assets.xcassets in Resources */,
+				24F340DD23838CCD0004A2C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340E823838CCE0004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340F323838CCE0004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		687DF8358E7FF114E53910A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter_point_polygon_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF499D9814C1B4DCF82C117E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4434958DDC4BB8449EFB1DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test/Pods-OpenCVSecondChapter_point_polygon_test-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test/Pods-OpenCVSecondChapter_point_polygon_test-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test/Pods-OpenCVSecondChapter_point_polygon_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D42CE846135A3DE8B9C11D5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter_point_polygon_testTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89A04D776EB6537A2CC8246 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests/Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F340CB23838CCD0004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340DA23838CCD0004A2C7 /* ViewController.m in Sources */,
+				24FC131F23838DA900114F26 /* PointPolygonTestViewController.mm in Sources */,
+				24F340D423838CCD0004A2C7 /* AppDelegate.m in Sources */,
+				24F340E523838CCE0004A2C7 /* main.m in Sources */,
+				24F340D723838CCD0004A2C7 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340E623838CCE0004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340EF23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340F123838CCE0004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340FA23838CCE0004A2C7 /* OpenCVSecondChapter_point_polygon_testUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24F340EC23838CCE0004A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F340CE23838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test */;
+			targetProxy = 24F340EB23838CCE0004A2C7 /* PBXContainerItemProxy */;
+		};
+		24F340F723838CCE0004A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F340CE23838CCD0004A2C7 /* OpenCVSecondChapter_point_polygon_test */;
+			targetProxy = 24F340F623838CCE0004A2C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24F340DB23838CCD0004A2C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F340DC23838CCD0004A2C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24F340E023838CCE0004A2C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F340E123838CCE0004A2C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24F340FC23838CCE0004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24F340FD23838CCE0004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24F340FF23838CCE0004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDF7EEBF6E578411BC7E591 /* Pods-OpenCVSecondChapter_point_polygon_test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = OpenCVSecondChapter_point_polygon_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-point-polygon-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24F3410023838CCE0004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE22640C8845F8B3DCD1650 /* Pods-OpenCVSecondChapter_point_polygon_test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = OpenCVSecondChapter_point_polygon_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-point-polygon-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24F3410223838CCE0004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D0C540AA04A2947E505C59 /* Pods-OpenCVSecondChapter_point_polygon_testTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = OpenCVSecondChapter_point_polygon_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-point-polygon-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter_point_polygon_test.app/OpenCVSecondChapter_point_polygon_test";
+			};
+			name = Debug;
+		};
+		24F3410323838CCE0004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C957BD85251C03479CE44D /* Pods-OpenCVSecondChapter_point_polygon_testTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = OpenCVSecondChapter_point_polygon_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-point-polygon-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter_point_polygon_test.app/OpenCVSecondChapter_point_polygon_test";
+			};
+			name = Release;
+		};
+		24F3410523838CCE0004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7E150AE9DB421436FA78AA /* Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = OpenCVSecondChapter_point_polygon_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-point-polygon-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVSecondChapter_point_polygon_test;
+			};
+			name = Debug;
+		};
+		24F3410623838CCE0004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A699363B78307809B84C77C /* Pods-OpenCVSecondChapter_point_polygon_test-OpenCVSecondChapter_point_polygon_testUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = OpenCVSecondChapter_point_polygon_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-point-polygon-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVSecondChapter_point_polygon_test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F340CA23838CCD0004A2C7 /* Build configuration list for PBXProject "OpenCVSecondChapter_point_polygon_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340FC23838CCE0004A2C7 /* Debug */,
+				24F340FD23838CCE0004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F340FE23838CCE0004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter_point_polygon_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340FF23838CCE0004A2C7 /* Debug */,
+				24F3410023838CCE0004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F3410123838CCE0004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter_point_polygon_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F3410223838CCE0004A2C7 /* Debug */,
+				24F3410323838CCE0004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F3410423838CCE0004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter_point_polygon_testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F3410523838CCE0004A2C7 /* Debug */,
+				24F3410623838CCE0004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24F340C723838CCD0004A2C7 /* Project object */;
+}

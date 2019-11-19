@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F3408F238385210004A2C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3408E238385210004A2C7 /* AppDelegate.m */; };
+		24F34092238385210004A2C7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F34091238385210004A2C7 /* SceneDelegate.m */; };
+		24F34095238385210004A2C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F34094238385210004A2C7 /* ViewController.m */; };
+		24F34098238385210004A2C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F34096238385210004A2C7 /* Main.storyboard */; };
+		24F3409A238385230004A2C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F34099238385230004A2C7 /* Assets.xcassets */; };
+		24F3409D238385230004A2C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F3409B238385230004A2C7 /* LaunchScreen.storyboard */; };
+		24F340A0238385230004A2C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3409F238385230004A2C7 /* main.m */; };
+		24F340AA238385230004A2C7 /* OpenCVSecondChapter_momentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340A9238385230004A2C7 /* OpenCVSecondChapter_momentsTests.m */; };
+		24F340B5238385230004A2C7 /* OpenCVSecondChapter_momentsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F340B4238385230004A2C7 /* OpenCVSecondChapter_momentsUITests.m */; };
+		24F340C5238385CE0004A2C7 /* MomentsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 24F340C4238385CE0004A2C7 /* MomentsViewController.mm */; };
+		2B4235835812DAAE0370635F /* libPods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 126B7EF3BED0D365B3385126 /* libPods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.a */; };
+		8868754DD071EC5F1276E223 /* libPods-OpenCVSecondChapter-moments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 532262FD6A91F90BF467CE03 /* libPods-OpenCVSecondChapter-moments.a */; };
+		BCBC5FB11063CAEB8B695973 /* libPods-OpenCVSecondChapter-momentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE259DF0BBFA98502ABA11A /* libPods-OpenCVSecondChapter-momentsTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24F340A6238385230004A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F34082238385210004A2C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F34089238385210004A2C7;
+			remoteInfo = "OpenCVSecondChapter-moments";
+		};
+		24F340B1238385230004A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F34082238385210004A2C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F34089238385210004A2C7;
+			remoteInfo = "OpenCVSecondChapter-moments";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		126B7EF3BED0D365B3385126 /* libPods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1714D9CF878F28ECDACD11C9 /* Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24F3408A238385210004A2C7 /* OpenCVSecondChapter-moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCVSecondChapter-moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F3408D238385210004A2C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24F3408E238385210004A2C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24F34090238385210004A2C7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24F34091238385210004A2C7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24F34093238385210004A2C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24F34094238385210004A2C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24F34097238385210004A2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24F34099238385230004A2C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24F3409C238385230004A2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24F3409E238385230004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F3409F238385230004A2C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24F340A5238385230004A2C7 /* OpenCVSecondChapter-momentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-momentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F340A9238385230004A2C7 /* OpenCVSecondChapter_momentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_momentsTests.m; sourceTree = "<group>"; };
+		24F340AB238385230004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F340B0238385230004A2C7 /* OpenCVSecondChapter-momentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCVSecondChapter-momentsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F340B4238385230004A2C7 /* OpenCVSecondChapter_momentsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVSecondChapter_momentsUITests.m; sourceTree = "<group>"; };
+		24F340B6238385230004A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F340C3238385CE0004A2C7 /* MomentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentsViewController.h; sourceTree = "<group>"; };
+		24F340C4238385CE0004A2C7 /* MomentsViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MomentsViewController.mm; sourceTree = "<group>"; };
+		532262FD6A91F90BF467CE03 /* libPods-OpenCVSecondChapter-moments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-moments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C9B8122673C85616C895E7 /* Pods-OpenCVSecondChapter-momentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-momentsTests.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-momentsTests/Pods-OpenCVSecondChapter-momentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CE259DF0BBFA98502ABA11A /* libPods-OpenCVSecondChapter-momentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVSecondChapter-momentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76504927D68879BBB9204630 /* Pods-OpenCVSecondChapter-moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-moments.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-moments/Pods-OpenCVSecondChapter-moments.debug.xcconfig"; sourceTree = "<group>"; };
+		7F3117988B27038B68CDC662 /* Pods-OpenCVSecondChapter-momentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-momentsTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-momentsTests/Pods-OpenCVSecondChapter-momentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9DF4ECA799FE4D6E98DCBED /* Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC9FAB20D62D7C77E7A089E8 /* Pods-OpenCVSecondChapter-moments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSecondChapter-moments.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSecondChapter-moments/Pods-OpenCVSecondChapter-moments.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F34087238385210004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8868754DD071EC5F1276E223 /* libPods-OpenCVSecondChapter-moments.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340A2238385230004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC5FB11063CAEB8B695973 /* libPods-OpenCVSecondChapter-momentsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340AD238385230004A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4235835812DAAE0370635F /* libPods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F34081238385210004A2C7 = {
+			isa = PBXGroup;
+			children = (
+				24F3408C238385210004A2C7 /* OpenCVSecondChapter-moments */,
+				24F340A8238385230004A2C7 /* OpenCVSecondChapter-momentsTests */,
+				24F340B3238385230004A2C7 /* OpenCVSecondChapter-momentsUITests */,
+				24F3408B238385210004A2C7 /* Products */,
+				33E692FA8F9DAFA0FE0DFF96 /* Pods */,
+				B72747AFCBB1B17F631E6F72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24F3408B238385210004A2C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F3408A238385210004A2C7 /* OpenCVSecondChapter-moments.app */,
+				24F340A5238385230004A2C7 /* OpenCVSecondChapter-momentsTests.xctest */,
+				24F340B0238385230004A2C7 /* OpenCVSecondChapter-momentsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24F3408C238385210004A2C7 /* OpenCVSecondChapter-moments */ = {
+			isa = PBXGroup;
+			children = (
+				24F340C22383858D0004A2C7 /* 轮廓矩 */,
+				24F3408D238385210004A2C7 /* AppDelegate.h */,
+				24F3408E238385210004A2C7 /* AppDelegate.m */,
+				24F34090238385210004A2C7 /* SceneDelegate.h */,
+				24F34091238385210004A2C7 /* SceneDelegate.m */,
+				24F34093238385210004A2C7 /* ViewController.h */,
+				24F34094238385210004A2C7 /* ViewController.m */,
+				24F34096238385210004A2C7 /* Main.storyboard */,
+				24F34099238385230004A2C7 /* Assets.xcassets */,
+				24F3409B238385230004A2C7 /* LaunchScreen.storyboard */,
+				24F3409E238385230004A2C7 /* Info.plist */,
+				24F3409F238385230004A2C7 /* main.m */,
+			);
+			path = "OpenCVSecondChapter-moments";
+			sourceTree = "<group>";
+		};
+		24F340A8238385230004A2C7 /* OpenCVSecondChapter-momentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				24F340A9238385230004A2C7 /* OpenCVSecondChapter_momentsTests.m */,
+				24F340AB238385230004A2C7 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-momentsTests";
+			sourceTree = "<group>";
+		};
+		24F340B3238385230004A2C7 /* OpenCVSecondChapter-momentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24F340B4238385230004A2C7 /* OpenCVSecondChapter_momentsUITests.m */,
+				24F340B6238385230004A2C7 /* Info.plist */,
+			);
+			path = "OpenCVSecondChapter-momentsUITests";
+			sourceTree = "<group>";
+		};
+		24F340C22383858D0004A2C7 /* 轮廓矩 */ = {
+			isa = PBXGroup;
+			children = (
+				24F340C3238385CE0004A2C7 /* MomentsViewController.h */,
+				24F340C4238385CE0004A2C7 /* MomentsViewController.mm */,
+			);
+			path = "轮廓矩";
+			sourceTree = "<group>";
+		};
+		33E692FA8F9DAFA0FE0DFF96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76504927D68879BBB9204630 /* Pods-OpenCVSecondChapter-moments.debug.xcconfig */,
+				EC9FAB20D62D7C77E7A089E8 /* Pods-OpenCVSecondChapter-moments.release.xcconfig */,
+				C9DF4ECA799FE4D6E98DCBED /* Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.debug.xcconfig */,
+				1714D9CF878F28ECDACD11C9 /* Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.release.xcconfig */,
+				7F3117988B27038B68CDC662 /* Pods-OpenCVSecondChapter-momentsTests.debug.xcconfig */,
+				55C9B8122673C85616C895E7 /* Pods-OpenCVSecondChapter-momentsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B72747AFCBB1B17F631E6F72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				532262FD6A91F90BF467CE03 /* libPods-OpenCVSecondChapter-moments.a */,
+				126B7EF3BED0D365B3385126 /* libPods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.a */,
+				5CE259DF0BBFA98502ABA11A /* libPods-OpenCVSecondChapter-momentsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24F34089238385210004A2C7 /* OpenCVSecondChapter-moments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F340B9238385230004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-moments" */;
+			buildPhases = (
+				6B610D7DAE57468BC08717C0 /* [CP] Check Pods Manifest.lock */,
+				24F34086238385210004A2C7 /* Sources */,
+				24F34087238385210004A2C7 /* Frameworks */,
+				24F34088238385210004A2C7 /* Resources */,
+				B63C64B212B4ACB6DC5D4FCA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCVSecondChapter-moments";
+			productName = "OpenCVSecondChapter-moments";
+			productReference = 24F3408A238385210004A2C7 /* OpenCVSecondChapter-moments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24F340A4238385230004A2C7 /* OpenCVSecondChapter-momentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F340BC238385230004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-momentsTests" */;
+			buildPhases = (
+				7308880B9AACC988F84B91CA /* [CP] Check Pods Manifest.lock */,
+				24F340A1238385230004A2C7 /* Sources */,
+				24F340A2238385230004A2C7 /* Frameworks */,
+				24F340A3238385230004A2C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F340A7238385230004A2C7 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-momentsTests";
+			productName = "OpenCVSecondChapter-momentsTests";
+			productReference = 24F340A5238385230004A2C7 /* OpenCVSecondChapter-momentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24F340AF238385230004A2C7 /* OpenCVSecondChapter-momentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F340BF238385230004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-momentsUITests" */;
+			buildPhases = (
+				0D70E0D1F523D0A3F0F0317A /* [CP] Check Pods Manifest.lock */,
+				24F340AC238385230004A2C7 /* Sources */,
+				24F340AD238385230004A2C7 /* Frameworks */,
+				24F340AE238385230004A2C7 /* Resources */,
+				04B394E5E3C919FE8950EAC8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F340B2238385230004A2C7 /* PBXTargetDependency */,
+			);
+			name = "OpenCVSecondChapter-momentsUITests";
+			productName = "OpenCVSecondChapter-momentsUITests";
+			productReference = 24F340B0238385230004A2C7 /* OpenCVSecondChapter-momentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24F34082238385210004A2C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = persion;
+				TargetAttributes = {
+					24F34089238385210004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					24F340A4238385230004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24F34089238385210004A2C7;
+					};
+					24F340AF238385230004A2C7 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 24F34089238385210004A2C7;
+					};
+				};
+			};
+			buildConfigurationList = 24F34085238385210004A2C7 /* Build configuration list for PBXProject "OpenCVSecondChapter-moments" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24F34081238385210004A2C7;
+			productRefGroup = 24F3408B238385210004A2C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24F34089238385210004A2C7 /* OpenCVSecondChapter-moments */,
+				24F340A4238385230004A2C7 /* OpenCVSecondChapter-momentsTests */,
+				24F340AF238385230004A2C7 /* OpenCVSecondChapter-momentsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F34088238385210004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F3409D238385230004A2C7 /* LaunchScreen.storyboard in Resources */,
+				24F3409A238385230004A2C7 /* Assets.xcassets in Resources */,
+				24F34098238385210004A2C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340A3238385230004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340AE238385230004A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04B394E5E3C919FE8950EAC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D70E0D1F523D0A3F0F0317A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B610D7DAE57468BC08717C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-moments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7308880B9AACC988F84B91CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSecondChapter-momentsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63C64B212B4ACB6DC5D4FCA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-moments/Pods-OpenCVSecondChapter-moments-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-moments/Pods-OpenCVSecondChapter-moments-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSecondChapter-moments/Pods-OpenCVSecondChapter-moments-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F34086238385210004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F34095238385210004A2C7 /* ViewController.m in Sources */,
+				24F3408F238385210004A2C7 /* AppDelegate.m in Sources */,
+				24F340C5238385CE0004A2C7 /* MomentsViewController.mm in Sources */,
+				24F340A0238385230004A2C7 /* main.m in Sources */,
+				24F34092238385210004A2C7 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340A1238385230004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340AA238385230004A2C7 /* OpenCVSecondChapter_momentsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F340AC238385230004A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F340B5238385230004A2C7 /* OpenCVSecondChapter_momentsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24F340A7238385230004A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F34089238385210004A2C7 /* OpenCVSecondChapter-moments */;
+			targetProxy = 24F340A6238385230004A2C7 /* PBXContainerItemProxy */;
+		};
+		24F340B2238385230004A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F34089238385210004A2C7 /* OpenCVSecondChapter-moments */;
+			targetProxy = 24F340B1238385230004A2C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24F34096238385210004A2C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F34097238385210004A2C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24F3409B238385230004A2C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F3409C238385230004A2C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24F340B7238385230004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24F340B8238385230004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24F340BA238385230004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76504927D68879BBB9204630 /* Pods-OpenCVSecondChapter-moments.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-moments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-moments";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24F340BB238385230004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC9FAB20D62D7C77E7A089E8 /* Pods-OpenCVSecondChapter-moments.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-moments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-moments";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24F340BD238385230004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F3117988B27038B68CDC662 /* Pods-OpenCVSecondChapter-momentsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-momentsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-momentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-moments.app/OpenCVSecondChapter-moments";
+			};
+			name = Debug;
+		};
+		24F340BE238385230004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C9B8122673C85616C895E7 /* Pods-OpenCVSecondChapter-momentsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-momentsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-momentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSecondChapter-moments.app/OpenCVSecondChapter-moments";
+			};
+			name = Release;
+		};
+		24F340C0238385230004A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DF4ECA799FE4D6E98DCBED /* Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-momentsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-momentsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-moments";
+			};
+			name = Debug;
+		};
+		24F340C1238385230004A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1714D9CF878F28ECDACD11C9 /* Pods-OpenCVSecondChapter-moments-OpenCVSecondChapter-momentsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F733JW92J9;
+				INFOPLIST_FILE = "OpenCVSecondChapter-momentsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.persion.OpenCVSecondChapter-momentsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OpenCVSecondChapter-moments";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F34085238385210004A2C7 /* Build configuration list for PBXProject "OpenCVSecondChapter-moments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340B7238385230004A2C7 /* Debug */,
+				24F340B8238385230004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F340B9238385230004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-moments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340BA238385230004A2C7 /* Debug */,
+				24F340BB238385230004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F340BC238385230004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-momentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340BD238385230004A2C7 /* Debug */,
+				24F340BE238385230004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F340BF238385230004A2C7 /* Build configuration list for PBXNativeTarget "OpenCVSecondChapter-momentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F340C0238385230004A2C7 /* Debug */,
+				24F340C1238385230004A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24F34082238385210004A2C7 /* Project object */;
+}

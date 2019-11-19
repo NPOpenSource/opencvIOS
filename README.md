@@ -107,6 +107,10 @@ Opencv 中文网学习
 
 [OpenCV 之ios 为轮廓创建可倾斜的边界框和椭圆](/OpenCVSecondChapter-bounding_rotated_ellipses)
 
+[OpenCV 之ios 轮廓矩](/OpenCVSecondChapter-moments)
+
+[OpenCV 之ios 多边形测试](/OpenCVSecondChapter_point_polygon_test)
+
 
 
 
