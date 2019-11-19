@@ -105,6 +105,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios  创建包围轮廓的矩形和圆形边界框](/OpenCVSecondChapter-bounding_rects_circles)
 
+[OpenCV 之ios 为轮廓创建可倾斜的边界框和椭圆](/OpenCVSecondChapter-bounding_rotated_ellipses)
+
 
 
 
