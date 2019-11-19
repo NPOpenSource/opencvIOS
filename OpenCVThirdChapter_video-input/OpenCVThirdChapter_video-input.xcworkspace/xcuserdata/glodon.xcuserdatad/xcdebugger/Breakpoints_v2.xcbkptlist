@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A9D71AA0-FD79-4DFB-9144-D4F1E709FE3B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BC5DEEB-3DDE-413B-A917-6B82DBD56A6C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenCVThirdChapter_video-input/OpenCV&#x7684;&#x89c6;&#x9891;&#x8f93;&#x5165;&#x548c;&#x76f8;&#x4f3c;&#x5ea6;&#x6d4b;&#x91cf;/VideoInputViewController.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "-playerViewRef:andframeUnderTest:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

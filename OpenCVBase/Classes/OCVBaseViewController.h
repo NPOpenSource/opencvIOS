@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(UIButton *)createButtonFrame:(CGRect)frame title:(NSString *)title Block:(NSString*(^)(int hitCount))exeBlock;
 
 -(NSTimer *)createTimer:(NSTimeInterval)seconds exeBlock:(void(^)(void))block;
+
+-(NSString *)getFilePathInName:(NSString *)name;
+-(void)createCADisplayLinkExeBlock:(void(^)(BOOL * stop))exeBlock;
 @end
 
 NS_ASSUME_NONNULL_END

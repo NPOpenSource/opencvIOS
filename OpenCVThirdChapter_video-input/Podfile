@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'OpenCVThirdChapter_video-input' do
+  # Comment the next line if you don't want to use dynamic frameworks
+   pod 'OpenCVSource', :path => '../OpenCVSource'
+  pod 'OpenCVUtils', :path => '../OpenCVUtils'
+  pod 'OpenCVBase', :path => '../OpenCVBase'
+  # Pods for OpenCVThirdChapter_video-input
+
+  target 'OpenCVThirdChapter_video-inputTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'OpenCVThirdChapter_video-inputUITests' do
+    # Pods for testing
+  end
+
+end

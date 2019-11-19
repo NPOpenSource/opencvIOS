@@ -7,8 +7,24 @@
 
 #import "OCVBaseViewController.h"
 #import <objc/runtime.h>
+static int CADisplayLinkExeBlockKey;
+
+@interface CADisplayLink (exeBlock)
+@property (nonatomic ,strong) void (^exeBlock)(BOOL * stop) ;
+
+@end
+
+@implementation CADisplayLink (exeBlock)
+- (void)setExeBlock:(void(^)(BOOL *))exeBlock{
+    objc_setAssociatedObject(self, &CADisplayLinkExeBlockKey, exeBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+
+}
+- (void(^)(BOOL *))exeBlock{
+    return  objc_getAssociatedObject(self,  &CADisplayLinkExeBlockKey);
+}
 
 
+@end
 
 @interface UIButton (exeBlock)
 @property (nonatomic ,strong) NSString* (^exeBlock)(int hitCount) ;
@@ -68,9 +84,31 @@ static int slidervalueLabelBlockKey;
 @end
 
 @interface OCVBaseViewController ()
+@property (nonatomic ,weak) CADisplayLink * displayerLinkPlayer ;
 @end
 
 @implementation OCVBaseViewController
+
+-(NSString *)getFilePathInName:(NSString *)name{
+   return  [[NSBundle mainBundle] pathForResource:name ofType:nil];
+}
+
+-(void)createCADisplayLinkExeBlock:(void(^)(BOOL * stop))exeBlock{
+    
+    self.displayerLinkPlayer = [CADisplayLink displayLinkWithTarget:self selector:@selector(handleDisplayLink:)];
+    self.displayerLinkPlayer.exeBlock = exeBlock;
+    [self.displayerLinkPlayer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+}
+
+-(void)handleDisplayLink:(CADisplayLink *)displaylinkTimer{
+    BOOL stop = NO;
+    self.displayerLinkPlayer.exeBlock(&stop);
+    if (stop) {
+        [self.displayerLinkPlayer invalidate];
+        self.displayerLinkPlayer = nil;
+    }
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

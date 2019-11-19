@@ -111,8 +111,8 @@ Opencv 中文网学习
 
 [OpenCV 之ios 多边形测试](/OpenCVSecondChapter_point_polygon_test)
 
+## 第三章 *highgui* 模块. 高层GUI和媒体I/O
 
-
-
+[OpenCV之ios OpenCV的视频输入和相似度测量](/OpenCVThirdChapter_video-input)
 
 # 
